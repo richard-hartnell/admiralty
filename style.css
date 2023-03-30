@@ -1,0 +1,15 @@
+@media only screen and (max-width="720px") {
+    
+}
+
+@font-face {
+    font-family: 'Centabel';
+    src: url('./centabel.ttf') format("truetype");
+}
+
+body {
+    background-color: #2d4756;
+    color: seashell;
+    font-family: Centabel, Helvetica, Arial, sans-serif
+
+}

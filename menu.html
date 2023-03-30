@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Admiralty Lounge</title>
+    <script>
+      function toggleMenu() {
+        var menu1 = document.getElementById('menu1');
+        var menu2 = document.getElementById('menu2');
+        var link1 = document.getElementById('link1');
+        var link2 = document.getElementById('link2');
+        
+        if (menu1.style.display === 'none') {
+          menu1.style.display = 'block';
+          menu2.style.display = 'none';
+          link1.style.fontWeight = 'bold';
+          link2.style.fontWeight = 'normal';
+        } else {
+          menu1.style.display = 'none';
+          menu2.style.display = 'block';
+          link1.style.fontWeight = 'normal';
+          link2.style.fontWeight = 'bold';
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <a href="#" id="link1" onclick="toggleMenu(); return false;">Menu 1</a>
+    <a href="#" id="link2" onclick="toggleMenu(); return false;">Menu 2</a>
+    <div id="menu1">
+      <ul>
+        <li>Item 1A</li>
+        <li>Item 1B</li>
+        <li>Item 1C</li>
+      </ul>
+    </div>
+    <div id="menu2" style="display: none;">
+      <ul>
+        <li>Item 2A</li>
+        <li>Item 2B</li>
+        <li>Item 2C</li>
+      </ul>
+    </div>
+  </body>
+</html>
