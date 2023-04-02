@@ -114,7 +114,53 @@ nav {
     min-width: 270px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (orientation: portrait) {
+    .griddd {
+        align-items: center;
+        gap: 0px;
+        padding-left: 10%;
+        padding-right: 10%;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+    }
+
+    nav {
+        min-width: unset;
+    }
+
+    #address-col {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        min-width: 350px;
+    }
+
+    #anchor-logo {
+        /* grid-row-start: 3;
+        grid-row-end: 7; */
+        margin: center;
+        top: 220px;
+        min-width: 0;
+    }
+
+    #anchor-logo img {
+        height: 50vw;
+        width: auto;
+        min-height: 325px;
+        min-width; unset;
+    }
+
+    #hours-col {
+        grid-row-start: 7;
+    }
+
+    #anchor-logo {
+        justify-self: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
     .griddd {
         align-items: center;
         gap: 0px;
