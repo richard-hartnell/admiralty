@@ -3,25 +3,35 @@
     src: url('./MINERVAM.OTF') format("opentype");
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 #menu-link {
     font-size: 30px;
     padding-left: 20px;
     padding-top: 20px;
     position: fixed;
-}
+ }
 
 nav {
     display: flex;
-    height: 10%;
+    align-items: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    background-color: #2d4756;
 }
 
 #nav-logo {
-    padding-top: 25px;
+    padding: 20px 0 0 0;
     margin: 0 auto;
 }
 
 #nav-logo img {
-    height: 50px;
+    height: 55px;
 }
 
 a {
@@ -39,6 +49,7 @@ body {
     font-family: 'Minerva', Helvetica, Arial, sans-serif;
     line-height: 45px;
     min-height: 600px;
+    padding-top: 100px;
 }
 
 h1 {
@@ -70,36 +81,17 @@ h5 {
     line-height: 1.5rem;
 }
 
-main {
-}
-
 .griddd {
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 25% 50% 25%;
-    gap: 0;
-}
-
-.container-flexbox {
-    display: flex; 
-    justify-content: space-around;
-    flex-wrap: wrap; 
-}
-
-nav {
-    min-width: 840px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 #anchor-logo {
+    display: flex;
     align-items: center;
     justify-items: center;
-}
-
-#anchor-logo img {
-    height: 50vw;
-    min-height: 430px;
-    max-height: 700px;
 }
 
 #address-col {
@@ -114,62 +106,29 @@ nav {
     min-width: 270px;
 }
 
-@media only screen and (orientation: portrait) {
-    .griddd {
-        align-items: center;
-        gap: 0px;
-        padding-left: 10%;
-        padding-right: 10%;
-        grid-template-columns: unset;
-        grid-template-rows: unset;
-    }
-
-    nav {
-        min-width: unset;
-    }
-
-    #address-col {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        min-width: 350px;
-    }
-
-    #anchor-logo {
-        /* grid-row-start: 3;
-        grid-row-end: 7; */
-        margin: center;
-        top: 220px;
-        min-width: 0;
-    }
-
+@media only screen and (min-width: 800px) {
     #anchor-logo img {
-        height: 50vw;
-        width: auto;
-        min-height: 325px;
-        min-width; unset;
+        height: 75vh;
+        min-height: 430px;
+        padding-top: 220px;
+    }    
+    .griddd {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 50vh;
+        gap: 20px;
     }
-
-    #hours-col {
-        grid-row-start: 7;
+    nav {
+        min-width: 840px;
     }
-
-    #anchor-logo {
-        justify-self: center;
+    main {
+        max-height: 50%;
     }
-
 }
 
-
 @media only screen and (max-width: 800px) {
-    .griddd {
-        align-items: center;
-        gap: 0px;
-        padding-left: 10%;
-        padding-right: 10%;
-        grid-template-columns: unset;
-        grid-template-rows: unset;
-    }
-
     nav {
         min-width: unset;
     }
@@ -180,34 +139,16 @@ nav {
         min-width: 350px;
     }
 
-    #anchor-logo {
-        /* grid-row-start: 3;
-        grid-row-end: 7; */
-        margin: center;
-        top: 220px;
-        min-width: 0;
-    }
-
     #anchor-logo img {
-        height: 50vw;
-        width: auto;
-        min-height: 325px;
-        min-width; unset;
+        max-height: 400px;
+        margin: auto;
     }
-
-    #hours-col {
-        grid-row-start: 7;
-    }
-
-    #anchor-logo {
-        justify-self: center;
-    }
-
 }
 
 #menu1 h2 {
-    font-size: 60px;
+    font-size: 50px;
     padding: 10px;
+    line-height: 50px;
 }
 
 #menu1 h5 {
