@@ -91,13 +91,14 @@ h5 {
 #anchor-logo {
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-items: center; 
 }
 
 #anchor-logo img {
     height: 50vh;
     width: auto;
     margin: auto;
+    max-height: 400px;
 }
 
 #address-col {
