@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Admiralty Lounge</title>
+    <title>Menu | The Admiralty Lounge</title>
     <script>
-      function toggleMenu() {
+      function showMenu(menuId) {
         var menu1 = document.getElementById('menu1');
         var menu2 = document.getElementById('menu2');
         var link1 = document.getElementById('link1');
         var link2 = document.getElementById('link2');
         
-        if (menu1.style.display === 'none') {
+        if (menuId === 'menu1') {
           menu1.style.display = 'block';
           menu2.style.display = 'none';
           link1.style.fontWeight = 'bold';
@@ -26,53 +26,56 @@
     <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div id="Options" style="text-align: center; font-size: 22px;">
-    <h1 style="padding: 70px;">GALLEY FARE</h1>
-    <a href="#" style="padding-right: 20px;" id="link1" onclick="toggleMenu(); return false;">Food</a>
-    <a href="#" style="padding-left: 20px;" id="link2" onclick="toggleMenu(); return false;">DRINKS</a>
+    <nav id="navbar" style="min-width: 400px;">
+      <div id="menu-link"><a href="menu.html">Menu</a></div>
+      <div id="nav-logo"><a href="index.html"><img src="logo-nav.webp"></a></div>
+    </nav>
+    <div id="Options" style="text-align: center; font-size: 22px; ">
+     <h1 style="padding: 70px 0 20px 0; font-size: 72px; text-align: center;">GALLEY FARE</h1>
+    <div id="menu" style="padding-bottom: 20px; text-decoration: underline;">
+      <a href="#" style="padding-right: 20px;" id="link1" onclick="showMenu('menu1'); return false;">Food</a><a href="#" style="padding-left: 20px;" id="link2" onclick="showMenu('menu2'); return false;">DRINKS</a>
+    </div>
     <div id="menu1" style="text-align: center;" width="100%">
+      <h2>Appetizers</h2>
       <h3>Deviled Eggs</h3>
-      <h4>$9</h4>
+      <h5>$9</h5>
       <h3>Pork Rillettes</h3>
-      <h4>$12</h4>
+      <h5>$12</h5>
       <h3>Smoked Oysters</h3>
-      <h4>$12</h4>
+      <h5>$12</h5>
       <h3>Bubble and Squeak</h3>
-      <h4>$10</h4>
+      <h5>$10</h5>
       <h2>Stews</h2>
       <h3>Killick's Cure</h3>
-      <h4>a vegan soup of farrow, kale, ginger, onion, and miso
+      <h5>a vegan soup of farrow, kale, ginger, onion, and miso
         <br>$14</h4>
       <h3>Goat Herder</h3>
-      <h4>goat stew, with parsnips, rutabaga and onion in a berbere broth
+      <h5>goat stew, with parsnips, rutabaga and onion in a berbere broth
         <br>$18</h4>
       <h3>Fisherman's Bowl</h3>
-      <h4>clams, shrimp, and cod in a tomato and white wine broth
+      <h5>clams, shrimp, and cod in a tomato and white wine broth
         <br>$23</h4>
-      <h3>SALADS</h2>
+      <h2>SALADS</h2>
       <h3>CAESAR SALAD</h3>
-        <h4>romaine lettuce, anchovies, toasted bread crumbs, parmesan
+        <h5>romaine lettuce, anchovies, toasted bread crumbs, parmesan
         <br>$14</h4>
         <h3>THE ADMIRAL'S GREENS</h3>
-        <h4>frisée, pork belly, poached egg, and warm bread with a sherry & shallot vinaigrette
+        <h5>frisée, pork belly, poached egg, and warm bread with a sherry & shallot vinaigrette
         <br>$14</h4>
-        <h2>MAINS</h2>
+        <h1>MAINS</h1>
         <h3>TAVERN STEAK</h3>
-        <h4>minced lamb & beef, beer cheese, rosemary toast, crisped shallots
+        <h5>minced lamb & beef, beer cheese, rosemary toast, crisped shallots
         <br>$19</h4>
         <h3>IMPERIAL SWINE</h3>
-        <h4>porchetta, roast potatoes, pickled cabbage, gravy
+        <h5>porchetta, roast potatoes, pickled cabbage, gravy
         <br>$24</h4>
     </div>
     <div id="menu2" style="display: none;">
-<h3>
-        Item 2A<br>
-      </h3>
-        $9
-      <h3>
-        Item 2B<br>
-        Item 2C<br>
-
+      <h2>Wine</h2>
+      <h3>Sauvignon Blanc, Kim Crawford, Imalborough</h3>
+      <h5>$12.00 glass / $45.00 bottle</h5>
+      <h3>Meursault, Mat Rot, Burgundy, France</h3>
+      <h5>$13 glass / $80 bottle</h5>
     </div>
   </body>
 </html>
