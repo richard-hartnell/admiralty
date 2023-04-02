@@ -95,7 +95,7 @@ h5 {
 }
 
 #anchor-logo img {
-    height: 70vh;
+    height: 60vw;
     width: auto;
     margin: auto;
 }
@@ -130,19 +130,6 @@ h5 {
     }
     main {
         max-height: 50%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #address-col {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        min-width: 350px;
-    }
-
-    #anchor-logo img {
-        max-height: 400px;
-        margin: auto;
     }
 }
 
