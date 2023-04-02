@@ -104,13 +104,19 @@ h5 {
 #address-col {
     align-self: center;
     text-align: center;
-    min-width: 270px;
+    min-width: 300px;
 }
 
 #hours-col {
     align-self: center;
     text-align: center;
     min-width: 270px;
+}
+
+@media only screen and (orientation: portrait) {
+    body [
+        
+    ]
 }
 
 @media only screen and (orientation: landscape) {
@@ -130,7 +136,34 @@ h5 {
         min-width: 840px;
     }
     main {
-        max-height: 50%;
+        max-height: 50vh;
+    }
+    h1 {
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    
+    h4 {
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    
+    h5 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 }
 
