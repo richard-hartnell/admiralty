@@ -98,7 +98,7 @@ h5 {
     height: 50vh;
     width: auto;
     margin: auto;
-    max-height: 400px;
+    min-height: 400px;
 }
 
 #address-col {
@@ -113,7 +113,7 @@ h5 {
     min-width: 270px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (orientation: landscape) {
     #anchor-logo img {
         height: 75vh;
         min-height: 430px;
