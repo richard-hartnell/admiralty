@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Minerva';
-    src: url('./MINERVAM.otf') format("opentype");
+    src: url('MINERVAM.otf') format("opentype");
 }
 
 #menu-link {
