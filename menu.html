@@ -2,28 +2,26 @@
 <html>
   <head>
     <title>Menu | The Admiralty Lounge</title>
-    <script>
-      function showMenu(menuId) {
-        var menu1 = document.getElementById('menu1');
-        var menu2 = document.getElementById('menu2');
-        var link1 = document.getElementById('link1');
-        var link2 = document.getElementById('link2');
-        
-        if (menuId === 'menu1') {
-          menu1.style.display = 'block';
-          menu2.style.display = 'none';
-          link1.style.fontWeight = 'bold';
-          link2.style.fontWeight = 'normal';
-        } else {
-          menu1.style.display = 'none';
-          menu2.style.display = 'block';
-          link1.style.fontWeight = 'normal';
-          link2.style.fontWeight = 'bold';
-        }
-      }
-    </script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
+    <meta property="og:site_name" content="The Admiralty Lounge"/>
+    <meta property="og:title" content="The Admiralty Lounge"/>
+    <meta property="og:url" content="https://www.theadmiraltylounge.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="./anchor-logo.webp"/>
+    <meta property="og:image:width" content="1500"/>
+    <meta property="og:image:height" content="410"/>
+    <meta itemprop="name" content="The Admiralty Lounge"/>
+    <meta itemprop="url" content="https://www.theadmiraltylounge.com"/>
+    <meta itemprop="thumbnailUrl" content="./anchor-logo.webp"/>
+    <link rel="image_src" href="./anchor-logo.webp" />
+    <meta itemprop="image" content="./anchor-logo.webp"/>
+    <meta name="twitter:title" content="The Admiralty Lounge"/>
+    <meta name="twitter:image" content="./anchor-logo.webp"/>
+    <meta name="twitter:url" content="https://www.theadmiraltylounge.com"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="description" content="" />
   </head>
   <body>
     <nav id="navbar" style="min-width: 400px;">
@@ -33,7 +31,7 @@
     <div id="Options" style="text-align: center; font-size: 22px; ">
      <h1 style="padding: 70px 0 20px 0; font-size: 72px; text-align: center;">GALLEY FARE</h1>
     <div id="menu" style="padding-bottom: 20px; text-decoration: underline;">
-      <a href="#" style="padding-right: 20px;" id="link1" onclick="showMenu('menu1'); return false;">Food</a><a href="#" style="padding-left: 20px;" id="link2" onclick="showMenu('menu2'); return false;">DRINKS</a>
+      <a href="#" style="padding-right: 20px;" id="link1" onclick="showMenu('menu1'); return false;">Food</a><a href="#" style="padding-left: 20px;" id="link2" onclick="showMenu('menu2'); return false;">Drinks</a>
     </div>
     <div id="menu1" style="text-align: center;" width="100%">
       <h2>Appetizers</h2>
