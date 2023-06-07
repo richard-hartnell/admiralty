@@ -10,10 +10,13 @@ main {
 
 #toasttab-button {
     height: 5em;
-    width: 2em;
+    width: 30%;
+    /* min-width: 2em; */
     border: 2px solid seashell;
     border-radius: 5%;
     padding: 1em 3em;
+    margin: 3em;
+    font-size: 1.2em;
 }
 
 #menu-link {
