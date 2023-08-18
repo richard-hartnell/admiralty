@@ -21,12 +21,18 @@ main {
     white-space: nowrap;
 }
 
-#menu-link {
-    font-size: 2em;
+#menu-links {
+    font-size: 1.2em;
     padding-left: 20px;
     padding-top: 20px;
     position: relative;
  }
+
+#menu-links img {
+    padding: 0 5px 2px 5px;
+    height: 15px;
+    width: 15px;
+}
 
 nav {
     display: flex;
@@ -40,12 +46,12 @@ nav {
 
 #nav-logo {
     padding: 20px 0 0 0;
-    margin: 0 auto;
-    padding-right: 5em;
+    margin: 0 0 0 auto;
+    padding-right: 1em;
 }
 
 #nav-logo img {
-    height: 55px;
+    height: 45px;
 }
 
 a {
@@ -95,11 +101,35 @@ h5 {
     line-height: 1.5rem;
 }
 
-.griddd {
+#menu1 {
+    font-weight: bold;
+}
+
+#frontpage {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+}
+
+#glimpse {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+figure img {
+    height: 380px;
+}
+
+#team {
+    display: none;
+}
+
+#calendar {
+    display: none;
 }
 
 #anchor-logo {
@@ -145,6 +175,15 @@ h5 {
     nav {
         min-width: 840px;
     }
+
+    #menu-links a {
+        font-size: 1.5em;
+    }
+
+    #nav-logo img {
+        height: 75px;
+    }
+
     main {
         max-height: 50vh;
     }

@@ -1,18 +1,40 @@
-function showMenu(menuId) {
-    var menu1 = document.getElementById('menu1');
-    var menu2 = document.getElementById('menu2');
-    var link1 = document.getElementById('link1');
-    var link2 = document.getElementById('link2');
+const menu = document.getElementById('frontpage');
+const glimpse = document.getElementById('glimpse');
+const team = document.getElementById('team');
+const calendar = document.getElementById('calendar');
 
-    if (menuId === 'menu1') {
-      menu1.style.display = 'block';
-      menu2.style.display = 'none';
-      link1.style.fontWeight = 'bold';
-      link2.style.fontWeight = 'normal';
-    } else {
-      menu1.style.display = 'none';
-      menu2.style.display = 'block';
-      link1.style.fontWeight = 'normal';
-      link2.style.fontWeight = 'bold';
-    }
-  }
+const menu1 = document.getElementById('menu1');
+const menu2 = document.getElementById('menu2');
+const menu3 = document.getElementById('menu3');
+const menu4 = document.getElementById('menu4');
+
+function showMenu(menuId) {
+
+    if (menuId === 'glimpse') {
+      menu.style.display = 'none';
+      glimpse.style.display = 'block';
+      team.style.display = 'none';
+      calendar.style.display = 'none';
+      menu1.style.fontWeight = 'normal';
+      menu2.style.fontWeight = 'bold';
+      menu3.style.fontWeight = 'normal';
+      menu4.style.fontWeight = 'normal'}
+    else if (menuId === 'team') {
+      menu.style.display = 'none';
+      glimpse.style.display = 'none';
+      team.style.display = 'block';
+      calendar.style.display = 'none';
+      menu1.style.fontWeight = 'normal';
+      menu2.style.fontWeight = 'normal';
+      menu3.style.fontWeight = 'bold';
+      menu4.style.fontWeight = 'normal';
+    } else if (menuId === 'calendar') {
+      menu.style.display = 'none';
+      glimpse.style.display = 'none';
+      team.style.display = 'none';
+      calendar.style.display = 'block';
+      menu1.style.fontWeight = 'normal';
+      menu2.style.fontWeight = 'normal';
+      menu3.style.fontWeight = 'normal';
+      menu4.style.fontWeight = 'bold';
+}}

@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>The Admiralty Lounge</title>
+    <script src="script.js" defer></script>
+    <script async src="//www.instagram.com/embed.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta property="og:site_name" content="The Admiralty Lounge"/>
     <meta property="og:title" content="The Admiralty Lounge"/>
@@ -20,23 +22,32 @@
     <meta name="twitter:url" content="https://www.theadmiraltylounge.com"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="description" content="The Admiralty Lounge is a winsome nautical-themed bar near Bellingham, Washington's historic Mount Baker Theatre.">
-
   </head>
   <body>
     <main>
-    <nav id="navbar">
-      <div id="menu-link"><a href="admiralty_menu.pdf" target="_blank">Menu</a></div>
-      <div id="nav-logo"><a href="index.html"><img src="logo-nav.webp"></a></div>
-    </nav>
+      <nav id="navbar">
+        <div id="menu-links">
+          <a href="admiralty_menu.pdf" id="menu1" target="_blank">Menu</a>
+          <img src="rudder-bullet.png">
+          <a href="#" id="menu2" onclick="showMenu('glimpse'); return false;">Glimpse</a>
+          <img src="rudder-bullet.png">
+          <a href="#" id="menu3" onclick="showMenu('team'); return false;">Team</a>
+          <img src="rudder-bullet.png">
+          <a href="#" id="menu4" onclick="showMenu('calendar'); return false;">Calendar</a>
+        </div>
+        <div id="nav-logo"><a href="index.html"><img src="logo-nav.webp"></a></div>
+      </nav>
+
     <div id="flex-container">
-      <div class="griddd">
-          <div id="address-col">
-            <h3>100 N. Commercial St<br>
-            Bellingham, WA</h3>
-            <a href="https://www.toasttab.com/admiralty-lounge-100-n-commercial-st/v3" id="toasttab-button" data-initialized="true">
-              To Go and Delivery
-            </a>
-          </div>
+
+      <div id="frontpage">
+        <div id="address-col">
+          <h3>100 N. Commercial St<br>
+          Bellingham, WA</h3>
+          <a href="https://www.toasttab.com/admiralty-lounge-100-n-commercial-st/v3" id="toasttab-button" data-initialized="true">
+            To Go and Delivery
+          </a>
+        </div>
         <div id="anchor-logo"><img src="anchor-logo.webp">
         </div>
         <div id="hours-col">
@@ -50,7 +61,69 @@
           Sunday 4-10<br>
           </h4>      
         </div>
+      </div>
+
+      <!-- TODO: align cards side-by-side in landscape and add them -->
+      <div id="glimpse">
+        <figure>
+          <img src="anchor-logo.webp" />
+          <figcaption>lorem ipsum</figcaption>
+        </figure>
+        <figure>
+          <img src="anchor-logo.webp" />
+          <figcaption>LOREM IPSUM</figcaption>
+        </figure>
+        <figure>
+          <img src="anchor-logo.webp" />
+          <figcaption>lorem ipsum</figcaption>
+        </figure>
+      </div>
+
+      <div id="team">
+        <div id="address-col">
+          <h3>Team<br>
+          Bellingham, WA</h3>
+          <a href="https://www.toasttab.com/admiralty-lounge-100-n-commercial-st/v3" id="toasttab-button" data-initialized="true">
+            To Go and Delivery
+          </a>
+        </div>
+        <div id="hours-col">
+          <h1>Hours</h1>
+          <h4>
+          Tuesday 4-10<br>
+          Wednesday 4-10<br>
+          Thursday 4-12<br>
+          Friday 4-12<br>
+          Saturday 4-12<br>
+          Sunday 4-10<br>
+          </h4>      
+        </div>
+      </div>
+
+      <div id="calendar">
+        <div id="address-col">
+          <h3>Calendar<br>
+          Bellingham, WA</h3>
+          <a href="https://www.toasttab.com/admiralty-lounge-100-n-commercial-st/v3" id="toasttab-button" data-initialized="true">
+            To Go and Delivery
+          </a>
+        </div>
+        <div id="hours-col">
+          <h1>Hours</h1>
+          <h4>
+          Tuesday 4-10<br>
+          Wednesday 4-10<br>
+          Thursday 4-12<br>
+          Friday 4-12<br>
+          Saturday 4-12<br>
+          Sunday 4-10<br>
+          </h4>      
+        </div>
+      </div>
+
     </div>
+
     </main>
   </body>
+
 </html>
