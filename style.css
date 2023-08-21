@@ -2,6 +2,16 @@
     font-family: 'Minerva';
     src: url('./MINERVAM.OTF') format("opentype");
 }
+/* 
+@media only screen and (max-width: 920px) {
+    #glimpse {
+        flex-direction: column;
+        justify-content: center;;
+        width: 75%;
+        height: auto;
+    }
+    
+} */
 
 main {
     display: flex;
@@ -39,6 +49,7 @@ nav {
     align-items: space-between;
     position: fixed;
     width: 100%;
+    min-width: 500px;
     top: 0;
     z-index: 99;
     background-color: #2d4756;
@@ -51,7 +62,7 @@ nav {
 }
 
 #nav-logo img {
-    height: 45px;
+    height: 40px;
 }
 
 a {
@@ -114,10 +125,9 @@ h5 {
 
 #glimpse {
     display: none;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 figure img {

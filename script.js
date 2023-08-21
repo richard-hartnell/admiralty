@@ -12,7 +12,7 @@ function showMenu(menuId) {
 
     if (menuId === 'glimpse') {
       menu.style.display = 'none';
-      glimpse.style.display = 'block';
+      glimpse.style.display = 'flex';
       team.style.display = 'none';
       calendar.style.display = 'none';
       menu1.style.fontWeight = 'normal';
