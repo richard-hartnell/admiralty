@@ -123,19 +123,38 @@ h5 {
     justify-content: center;
 }
 
-#glimpse {
+#glimpse-wrapper {
     display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 1500px;
 }
 
 figure img {
     height: 380px;
 }
 
-#team {
+#team-wrapper {
     display: none;
+    text-align: center;
+    line-height: 1em;
+}
+
+#team {
+    justify-items: center;
+    display: flex;
+    max-width: 1000px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#team figcaption {
+    width: 380px;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.2em;
 }
 
 #calendar {

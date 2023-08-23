@@ -1,7 +1,7 @@
 const menu = document.getElementById('frontpage');
-const glimpse = document.getElementById('glimpse');
-const team = document.getElementById('team');
-const calendar = document.getElementById('calendar');
+const glimpse = document.getElementById('glimpse-wrapper');
+const team = document.getElementById('team-wrapper');
+const calendar = document.getElementById('calendar-wrapper');
 
 const menu1 = document.getElementById('menu1');
 const menu2 = document.getElementById('menu2');
