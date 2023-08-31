@@ -133,15 +133,17 @@ h5 {
 
 figure img {
     height: 380px;
+    border: 4px double goldenrod;
+    box-shadow: 1px 1px 6px black;
 }
 
-#team-wrapper {
+#crew-wrapper {
     display: none;
     text-align: center;
     line-height: 1em;
 }
 
-#team {
+#crew {
     justify-items: center;
     display: flex;
     max-width: 1000px;
@@ -150,11 +152,13 @@ figure img {
     justify-content: space-evenly;
 }
 
-#team figcaption {
+#crew figcaption {
     width: 380px;
     text-align: center;
     line-height: 1.3em;
-    font-size: 1.2em;
+    font-size: 1.25em;
+    color: gold;
+    text-shadow: 0px 0px 20px goldenrod;
 }
 
 #calendar {

@@ -1,6 +1,6 @@
 const menu = document.getElementById('frontpage');
 const glimpse = document.getElementById('glimpse-wrapper');
-const team = document.getElementById('team-wrapper');
+const crew = document.getElementById('crew-wrapper');
 const calendar = document.getElementById('calendar-wrapper');
 
 const menu1 = document.getElementById('menu1');
@@ -13,16 +13,16 @@ function showMenu(menuId) {
     if (menuId === 'glimpse') {
       menu.style.display = 'none';
       glimpse.style.display = 'flex';
-      team.style.display = 'none';
+      crew.style.display = 'none';
       calendar.style.display = 'none';
       menu1.style.fontWeight = 'normal';
       menu2.style.fontWeight = 'bold';
       menu3.style.fontWeight = 'normal';
       menu4.style.fontWeight = 'normal'}
-    else if (menuId === 'team') {
+    else if (menuId === 'crew') {
       menu.style.display = 'none';
       glimpse.style.display = 'none';
-      team.style.display = 'block';
+      crew.style.display = 'block';
       calendar.style.display = 'none';
       menu1.style.fontWeight = 'normal';
       menu2.style.fontWeight = 'normal';
@@ -31,7 +31,7 @@ function showMenu(menuId) {
     } else if (menuId === 'calendar') {
       menu.style.display = 'none';
       glimpse.style.display = 'none';
-      team.style.display = 'none';
+      crew.style.display = 'none';
       calendar.style.display = 'block';
       menu1.style.fontWeight = 'normal';
       menu2.style.fontWeight = 'normal';
