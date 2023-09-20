@@ -131,11 +131,34 @@ h5 {
     max-width: 1500px;
 }
 
-figure img {
+#glimpse-wrapper figure img {
     height: 380px;
     border: 4px double goldenrod;
     box-shadow: 1px 1px 6px black;
 }
+
+#reviews-wrapper {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1500px;
+}
+
+#reviews-wrapper img {
+    border: 4px double goldenrod;
+    box-shadow: 1px 1px 6px black;
+}
+
+#reviews-wrapper figure img {
+    width: 350px;
+}
+
+
+#daily-review img {
+    max-width: 700px;
+}
+
 
 #crew-wrapper {
     display: none;
