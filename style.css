@@ -2,6 +2,7 @@
     font-family: 'Minerva';
     src: url('./MINERVAM.OTF') format("opentype");
 }
+
 /* 
 @media only screen and (max-width: 920px) {
     #glimpse {
@@ -10,7 +11,6 @@
         width: 75%;
         height: auto;
     }
-    
 } */
 
 main {
@@ -155,7 +155,6 @@ h5 {
     width: 350px;
 }
 
-
 #daily-review img {
     max-width: 700px;
 }
@@ -170,10 +169,22 @@ h5 {
 #crew {
     justify-items: center;
     display: flex;
-    max-width: 1000px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#crew figure {
+    max-width: 70%;
+    padding: 10%;
+    margin: 0 auto;
+    
+}
+
+#crew img {
+    height: 550px;
+    border: 4px double goldenrod;
 }
 
 #crew figcaption {
@@ -182,10 +193,11 @@ h5 {
     line-height: 1.3em;
     font-size: 1.25em;
     color: gold;
+    margin: 0 auto;
     text-shadow: 0px 0px 20px goldenrod;
 }
 
-#calendar {
+#calendar-wrapper {
     display: none;
 }
 
@@ -193,7 +205,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-items: center;
-    padding-top: 2em; 
+    padding-top: 2em;
 }
 
 #anchor-logo img {
