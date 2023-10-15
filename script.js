@@ -1,7 +1,7 @@
 const menu = document.getElementById('frontpage');
 const glimpse = document.getElementById('glimpse-wrapper');
 const crew = document.getElementById('crew-wrapper');
-const calendar = document.getElementById('calendar-wrapper');
+const music = document.getElementById('music-wrapper');
 const reviews = document.getElementById('reviews-wrapper');
 
 const menu1 = document.getElementById('menu1');
@@ -16,7 +16,7 @@ function showMenu(menuId) {
       menu.style.display = 'none';
       glimpse.style.display = 'flex';
       crew.style.display = 'none';
-      calendar.style.display = 'none';
+      music.style.display = 'none';
       reviews.style.display = 'none';
       menu1.style.fontWeight = 'normal';
       menu2.style.fontWeight = 'bold';
@@ -27,18 +27,18 @@ function showMenu(menuId) {
       menu.style.display = 'none';
       glimpse.style.display = 'none';
       crew.style.display = 'block';
-      calendar.style.display = 'none';
+      music.style.display = 'none';
       reviews.style.display = 'none';
       menu1.style.fontWeight = 'normal';
       menu2.style.fontWeight = 'normal';
       menu3.style.fontWeight = 'bold';
       menu4.style.fontWeight = 'normal';
       menu5.style.fontWeight = 'normal';
-    } else if (menuId === 'calendar') {
+    } else if (menuId === 'music') {
       menu.style.display = 'none';
       glimpse.style.display = 'none';
       crew.style.display = 'none';
-      calendar.style.display = 'block';
+      music.style.display = 'block';
       reviews.style.display = 'none';
       menu1.style.fontWeight = 'normal';
       menu2.style.fontWeight = 'normal';
@@ -49,9 +49,9 @@ function showMenu(menuId) {
       menu.style.display = 'none';
       glimpse.style.display = 'none';
       crew.style.display = 'none';
-      calendar.style.display = 'none';
+      music.style.display = 'none';
       crew.style.display = 'none';
-      calendar.style.display = 'none';
+      music.style.display = 'none';
       reviews.style.display = 'flex';
       menu1.style.fontWeight = 'normal';
       menu2.style.fontWeight = 'normal';
