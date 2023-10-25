@@ -40,8 +40,8 @@ main {
 
 #menu-links img {
     padding: 0 5px 2px 5px;
-    height: 15px;
-    width: 15px;
+    height: 0.5em;
+    width: 0.5em;
 }
 
 nav {
