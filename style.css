@@ -3,16 +3,6 @@
     src: url('./MINERVAM.OTF') format("opentype");
 }
 
-/* 
-@media only screen and (max-width: 920px) {
-    #glimpse {
-        flex-direction: column;
-        justify-content: center;;
-        width: 75%;
-        height: auto;
-    }
-} */
-
 main {
     display: flex;
     justify-content: center;
@@ -22,7 +12,6 @@ main {
 #toasttab-button {
     justify-self: center;
     height: 5em;
-    /* width: 22%; */
     border: 2px solid seashell;
     border-radius: 5%;
     padding: 1em 1em;
@@ -78,7 +67,6 @@ body {
     background-color: #2d4756;
     color: seashell;
     font-family: 'Minerva', Helvetica, Arial, sans-serif;
-    line-height: 45px;
     min-height: 600px;
     padding-top: 100px;
     min-width: 550px;
@@ -91,25 +79,21 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    text-transform: uppercase;
-    line-height: 30px;
+    /* text-transform: uppercase; */
 }
 
 h3 {
     font-size: 1.75rem;
-    text-transform: uppercase;
-    line-height: 30px;
+    /* text-transform: uppercase; */
 }
 
 h4 {
     font-size: 1.75rem;
-    text-transform: uppercase;
-    line-height: 30px;
+    /* text-transform: uppercase; */
 }
 
 h5 {
     font-size: 1.5rem;
-    line-height: 1.5rem;
 }
 
 #menu1 {
@@ -132,7 +116,7 @@ h5 {
 }
 
 #glimpse-wrapper figure img {
-    height: 380px;
+    min-height: 100vh;
     border: 4px double goldenrod;
     box-shadow: 1px 1px 6px black;
 }
@@ -142,7 +126,7 @@ h5 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 1500px;
+    max-width: 95%;
 }
 
 #reviews-wrapper img {
@@ -151,7 +135,7 @@ h5 {
 }
 
 #reviews-wrapper figure img {
-    width: 350px;
+    min-width: 30%;
 }
 
 #daily-review img {
@@ -198,23 +182,28 @@ h5 {
 #music-wrapper {
     display: none;
     text-align: center;
-    line-height: 1em;
+    text-transform: none;
+}
+
+#music-wrapper h3 {
+    color: goldenrod;
 }
 
 #music {
     justify-items: center;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     margin: 0 auto;
 }
 
 .show {
-    /* max-width: 70%;? */
-    /* padding: 10%; */
-    /* margin: 0 auto; */
+
     display: flex;
     border: 4px double goldenrod;    
+}
+
+.show h2 {
+    text-transform: uppercase;
 }
 
 .show-pic {
@@ -226,21 +215,24 @@ h5 {
 .show-info {
     width: 380px;
     text-align: center;
-    /* line-height: 1.3em; */
-    /* font-size: 0.4rem; */
     color: gold;
     margin: 0 auto;
-    text-shadow: 0px 0px 5px goldenrod;
+    font-size: 1.01em;
+    text-shadow: 1px 1px 0px black;
 }
 
 .soon {
     text-transform: none;
-    line-height:normal;
+    line-height: 0.1em;
+    padding: 10px 0px;
+}
+
+.soon h3, .previously h3 {
+    text-shadow: 0px 0px 20px goldenrod;
 }
 
 .music-bio {
     font-size: 2em;
-    line-height: 0.75em;
     padding: 0 10px;
 
 }
@@ -259,10 +251,7 @@ h5 {
 
 #anchor-logo img {
     max-height: 50vh;
-    /* height: 40px; */
-    /* width: auto; */
     margin: auto;
-    /* min-height: 400px; */
 }
 
 #address-col {
@@ -276,6 +265,7 @@ h5 {
     align-self: center;
     text-align: center;
     min-width: 270px;
+    text-transform: uppercase;
 }
 
 @media only screen and (orientation: portrait) {
@@ -310,30 +300,22 @@ h5 {
     }
     h1 {
         font-size: 4rem;
-        text-transform: uppercase;
     }
     
     h2 {
         font-size: 2rem;
-        /* text-transform: uppercase; */
-        line-height: 30px;
     }
     
     h3 {
         font-size: 1.75rem;
-        text-transform: uppercase;
-        line-height: 30px;
     }
     
     h4 {
         font-size: 1.75rem;
-        text-transform: uppercase;
-        line-height: 30px;
     }
     
     h5 {
         font-size: 1.5rem;
-        line-height: 1.5rem;
     }
 }
 
