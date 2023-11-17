@@ -3,34 +3,19 @@
     src: url('./MINERVAM.OTF') format("opentype");
 }
 
+body {
+    background-color: #2d4756;
+    color: seashell;
+    font-family: 'Minerva', Helvetica, Arial, sans-serif;
+    min-height: 600px;
+    padding-top: 100px;
+    min-width: 550px;
+}
+
 main {
-    display: flex;
-    justify-content: center;
-    padding-top: 1em;
-}
-
-#toasttab-button, #reservation-button {
-    justify-self: center;
-    height: 5em;
-    border: 2px solid seashell;
-    border-radius: 5%;
-    padding: 1em 1em;
-    margin: 2% 0;
-    font-size: 1.5em;
-    white-space: nowrap;
-}
-
-#menu-links {
-    font-size: 1.85em;
-    padding-left: 20px;
-    padding-top: 20px;
-    position: relative;
- }
-
-#menu-links img {
-    padding: 0 5px 2px 5px;
-    height: 0.5em;
-    width: 0.5em;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* padding-top: 1em; */
 }
 
 nav {
@@ -63,13 +48,28 @@ a:hover {
     color: gold;
 }
 
-body {
-    background-color: #2d4756;
-    color: seashell;
-    font-family: 'Minerva', Helvetica, Arial, sans-serif;
-    min-height: 600px;
-    padding-top: 100px;
-    min-width: 550px;
+#toasttab-button, #reservation-button {
+    justify-self: center;
+    height: 5em;
+    border: 2px solid seashell;
+    border-radius: 5%;
+    padding: 1em 1em;
+    margin: 2% 0;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+#menu-links {
+    font-size: 1.85em;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: relative;
+ }
+
+#menu-links img {
+    padding: 0 5px 2px 5px;
+    height: 0.5em;
+    width: 0.5em;
 }
 
 h1 {
@@ -108,7 +108,7 @@ h5 {
 }
 
 #address {
-    padding: 20px;
+    padding: 0px 0px 20px 0px;
 }
 
 #glimpse-wrapper {
@@ -263,7 +263,7 @@ h5 {
     text-align: center;
     min-width: 310px;
     white-space: nowrap;
-    padding: 2em 0 2em 0;
+    padding: 0 0 2em 0;
 }
 
 #address-col a {
@@ -288,6 +288,8 @@ h5 {
         height: 100vh;
         min-height: 75vh;
     }
+    
+
     #frontpage {
         display: flex;
         align-content: center;
@@ -296,6 +298,23 @@ h5 {
         height: 75vh;
         gap: 20px;
     }
+
+    #address-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #toasttab-button, #reservation-button {
+        justify-self: center;
+        height: 1em;
+        border: 2px solid seashell;
+        border-radius: 5%;
+        padding: 1em 0;
+        margin: 2% 0;
+        font-size: 1.5em;
+        white-space: nowrap;
+    }    
+
     nav {
         min-width: 550px;
     }
@@ -304,9 +323,9 @@ h5 {
         height: 75px;
     }
 
-    main {
+    /* main {
         max-height: 50vh;
-    }
+    } */
     h1 {
         font-size: 4rem;
     }

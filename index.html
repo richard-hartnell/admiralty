@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>The Admiralty Lounge</title>
-
     <link rel="stylesheet" href="style.css">
     <meta property="og:site_name" content="The Admiralty Lounge"/>
     <meta property="og:title" content="The Admiralty Lounge"/>
@@ -24,24 +23,24 @@
   </head>
 
   <body>
-    <main>
-      <nav id="navbar">
-        <div id="menu-links">
-          <a href="admiralty_menu.pdf" id="menu1" target="_blank">Menu</a>
-          <img src="rudder-bullet.png">
-          <a href="#" id="menu2" onclick="showMenu('glimpse'); return false;">Look Inside</a>
-          <img src="rudder-bullet.png">
-          <!-- <a href="#" id="menu3" onclick="showMenu('crew'); return false;">Crew</a>
-          <img src="rudder-bullet.png"> -->
-          <a href="#" id="menu4" onclick="showMenu('music'); return false;">Music</a>
-          <img src="rudder-bullet.png">
-          <a href="#" id="menu5" onclick="showMenu('reviews'); return false;">Reviews</a>
-        </div>
-        <div id="nav-logo"><a href="index.html"><img src="logo-nav.webp"></a></div>
-      </nav>
+    <nav id="navbar">
+      <div id="menu-links">
+        <a href="admiralty_menu.pdf" id="menu1" target="_blank">Menu</a>
+        <img src="rudder-bullet.png">
+        <a href="#" id="menu2" onclick="showMenu('glimpse'); return false;">Look Inside</a>
+        <img src="rudder-bullet.png">
+        <!-- <a href="#" id="menu3" onclick="showMenu('crew'); return false;">Crew</a>
+        <img src="rudder-bullet.png"> -->
+        <a href="#" id="menu4" onclick="showMenu('music'); return false;">Music</a>
+        <img src="rudder-bullet.png">
+        <a href="#" id="menu5" onclick="showMenu('reviews'); return false;">Reviews</a>
+      </div>
+      <div id="nav-logo"><a href="index.html"><img src="logo-nav.webp"></a></div>
+    </nav>
 
-    <div id="flex-container">
-      <div id="frontpage">
+    <main id="flex-container">
+
+      <section id="frontpage">
         <div id="address-col">
           <h3 id="address">100 N. Commercial St<br>
           Bellingham, WA</h3>
@@ -65,7 +64,7 @@
           Sunday 4-10<br>
           </h4>      
         </div>
-      </div>
+      </section>
 
       <section id="glimpse-wrapper">
         <figure>
@@ -223,8 +222,10 @@
           Russell Thompson</h5>
         </figure>
       </section>
-    </div>
+
     </main>
+
   </body>
+  
 </html>
 <script src="script.js" defer></script>
