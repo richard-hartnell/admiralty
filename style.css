@@ -8,14 +8,8 @@ body {
     color: seashell;
     font-family: 'Minerva', Helvetica, Arial, sans-serif;
     min-height: 600px;
+    min-width: 650px;
     padding-top: 100px;
-    min-width: 550px;
-}
-
-main {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* padding-top: 1em; */
 }
 
 nav {
@@ -23,7 +17,7 @@ nav {
     align-items: space-between;
     position: fixed;
     width: 100%;
-    min-width: 550px;
+    min-width: 650px;
     top: 0;
     z-index: 99;
     background-color: #2d4756;
@@ -79,7 +73,6 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    /* text-transform: uppercase; */
 }
 
 h3 {
@@ -89,7 +82,6 @@ h3 {
 
 h4 {
     font-size: 1.75rem;
-    /* text-transform: uppercase; */
 }
 
 h5 {
@@ -323,9 +315,6 @@ h5 {
         height: 75px;
     }
 
-    /* main {
-        max-height: 50vh;
-    } */
     h1 {
         font-size: 4rem;
     }
