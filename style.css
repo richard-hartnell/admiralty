@@ -9,7 +9,7 @@ main {
     padding-top: 1em;
 }
 
-#toasttab-button {
+#toasttab-button, #reservation-button {
     justify-self: center;
     height: 5em;
     border: 2px solid seashell;
@@ -84,7 +84,7 @@ h2 {
 
 h3 {
     font-size: 1.75rem;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 
 h4 {
@@ -105,6 +105,10 @@ h5 {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+}
+
+#address {
+    padding: 20px;
 }
 
 #glimpse-wrapper {
@@ -259,6 +263,11 @@ h5 {
     text-align: center;
     min-width: 310px;
     white-space: nowrap;
+    padding: 2em 0 2em 0;
+}
+
+#address-col a {
+    margin: 1em;
 }
 
 #hours-col {
@@ -276,15 +285,15 @@ h5 {
 
 @media only screen and (orientation: landscape) {
     #anchor-logo img {
-        height: 75vh;
-        min-height: 430px;
-    }    
-    .griddd {
+        height: 100vh;
+        min-height: 75vh;
+    }
+    #frontpage {
         display: flex;
         align-content: center;
         justify-content: center;
         flex-direction: row;
-        height: 50vh;
+        height: 75vh;
         gap: 20px;
     }
     nav {
