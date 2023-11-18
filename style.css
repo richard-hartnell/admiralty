@@ -105,10 +105,12 @@ h5 {
 
 #glimpse-wrapper {
     display: none;
-    flex-direction: row;
+    justify-content: center;
+    /* flex-direction: row; */
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    max-width: 1500px;
+    /* justify-content: space-around; */
+    min-width: 650px;
+    /* max-width: 1500px; */
 }
 
 #glimpse-wrapper figure img {
@@ -179,6 +181,8 @@ h5 {
     display: none;
     text-align: center;
     text-transform: none;
+    margin: 0 auto;
+    padding: 0em 1em;
 }
 
 #music-wrapper h3 {
@@ -193,9 +197,10 @@ h5 {
 }
 
 .show {
-
+    margin: 0 auto;
+    min-width: 650px;
     display: flex;
-    border: 4px double goldenrod;    
+    border: 4px double goldenrod;
 }
 
 .show h2 {
@@ -209,7 +214,7 @@ h5 {
 }
 
 .show-info {
-    width: 380px;
+    width: 400px;
     text-align: center;
     color: gold;
     margin: 0 auto;
@@ -220,7 +225,7 @@ h5 {
 .soon {
     text-transform: none;
     line-height: 0.1em;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
 }
 
 .soon h3, .previously h3 {
@@ -230,7 +235,6 @@ h5 {
 .music-bio {
     font-size: 2em;
     padding: 0 10px;
-
 }
 
 .showtime {
@@ -269,18 +273,21 @@ h5 {
     text-transform: uppercase;
 }
 
-@media only screen and (orientation: portrait) {
-    #reviews-wrapper {
-        max-width: 700px;
-    }
-} 
-
 @media only screen and (orientation: landscape) {
     #anchor-logo img {
         height: 100vh;
         min-height: 75vh;
     }
-    
+
+    #reviews-wrapper {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    #music-wrapper {
+        max-width: 70%;
+        margin: 0 auto;
+    }
 
     #frontpage {
         display: flex;
