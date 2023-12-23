@@ -276,6 +276,12 @@ h5 {
     text-transform: uppercase;
 }
 
+#twentyone {
+    padding: 1.5em 0;
+    text-transform: initial;
+    font-size: 1.2em;
+}
+
 @media only screen and (orientation: landscape) {
     #anchor-logo img {
         height: 100vh;
