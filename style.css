@@ -54,7 +54,7 @@ a:hover {
 }
 
 #menu-links {
-    font-size: 1.85em;
+    font-size: 3.75vw;
     padding-left: 20px;
     padding-top: 20px;
     position: relative;
@@ -253,7 +253,7 @@ h5 {
 }
 
 #anchor-logo img {
-    max-height: 50vh;
+    max-height: 40vh;
     margin: auto;
 }
 
@@ -286,6 +286,10 @@ h5 {
     #anchor-logo img {
         height: 100vh;
         min-height: 75vh;
+    }
+
+    #menu-links {
+        font-size: 2.5vw;
     }
 
     #reviews-wrapper {
