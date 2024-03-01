@@ -77,7 +77,6 @@ h2 {
 
 h3 {
     font-size: 1.75rem;
-    text-transform: uppercase;
 }
 
 h4 {
@@ -100,6 +99,7 @@ h5 {
 }
 
 #address {
+    text-transform: uppercase;
     padding: 0px 0px 20px 0px;
 }
 
@@ -205,10 +205,6 @@ h5 {
     border: 4px double goldenrod;
 }
 
-.show h2 {
-    text-transform: uppercase;
-}
-
 .show-pic {
     height: 500px;
     width: 375px;
@@ -222,7 +218,15 @@ h5 {
     margin: 0 auto;
     font-size: 1.01em;
     text-shadow: 1px 1px 0px black;
+}
+
+.show-info h2 {
+    text-transform: uppercase;
     
+}
+
+.show-info h3 {
+    line-height: 0em;
 }
 
 .soon {
@@ -237,7 +241,13 @@ h5 {
 
 .music-bio {
     font-size: 2em;
+    line-height: 0.85em;
     padding: 0 10px;
+}
+
+.music-bio h2 {
+    font-size: 1.52em;
+    line-height: 0.9em;
 }
 
 .showtime {
