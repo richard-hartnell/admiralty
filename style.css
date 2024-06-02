@@ -60,7 +60,7 @@ a:hover {
  }
 
 #menu-links a {
-    font-size: clamp(1em, 1.5em, 1vw);
+    font-size: clamp(1em, 1.5em, 3vw);
 }
 
 #menu-links img {
