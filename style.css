@@ -8,7 +8,7 @@ body {
     color: seashell;
     font-family: 'Minerva', Helvetica, Arial, sans-serif;
     min-height: 600px;
-    min-width: 650px;
+    width: 100%;
     padding-top: 100px;
 }
 
@@ -17,7 +17,7 @@ nav {
     align-items: space-between;
     position: fixed;
     width: 100%;
-    min-width: 650px;
+    /* min-width: 650px; */
     top: 0;
     z-index: 99;
     background-color: #2d4756;
@@ -112,8 +112,8 @@ h5 {
     /* flex-direction: row; */
     flex-wrap: wrap;
     /* justify-content: space-around; */
-    min-width: 650px;
-    /* max-width: 1500px; */
+    /* min-width: 650px; */
+    max-width: 90%;
 }
 
 #glimpse-wrapper figure img {
@@ -140,7 +140,7 @@ h5 {
 }
 
 #daily-review img {
-    max-width: 700px;
+    max-width: 90vw;
 }
 
 #crew-wrapper {
