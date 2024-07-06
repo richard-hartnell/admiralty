@@ -10,7 +10,14 @@ const menu3 = document.getElementById('menu3');
 const menu4 = document.getElementById('menu4');
 const menu5 = document.getElementById('menu5');
 
+const burgerMenu = document.getElementById('nav-burger');
+
+function showBurger() {
+  burgerMenu.style.display = "";
+}
+
 function showMenu(menuId) {
+  burgerMenu.style.display = 'none';
 
     if (menuId === 'glimpse') {
       menu.style.display = 'none';

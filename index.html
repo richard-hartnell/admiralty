@@ -27,9 +27,14 @@
 
   <body>
     <nav id="navbar">
-      <div id="nav-logo"><a href="/index.html"><img src="/logo-nav.webp" alt="an Admiralty Lounge logo in the navbar"></a></div>
+      <div id="nav-logo">
+        <a href="/index.html"><img src="/logo-nav.webp" alt="an Admiralty Lounge logo in the navbar"></a>
+      </div>
+      <div id="burger-icon">
+        <a href="#" onclick="showBurger()">
+        <img src="./burger-menu.png" height=75 width=75 alt="A small, three-line icon representing a hamburger menu. When clicked, it opens a dropdown menu." onclick="showBurger()"></a>
+      </div>
       <div id="menu-links">
-        <img src="/rudder-bullet.png" alt="">
         <a href="/admiralty_menu.pdf" id="menu1" target="_blank">Menu</a>
         <img src="/rudder-bullet.png" alt="">
         <a href="#" id="menu2" onclick="showMenu('glimpse'); return false;">Look Inside</a>
@@ -43,9 +48,31 @@
         <a href="/admiralty_happy_hour.pdf" id="menu6" target="_blank">Happy Hour</a>
       </div>
     </nav>
+    <nav id="nav-burger" style="display: none">
+      <div id="nav-burger-inside">
+        <a href="/admiralty_menu.pdf" id="menu1" target="_blank">Menu</a>
+        <br>
+        <img src="/rudder-bullet.png" alt="">
+        <br>
+        <a href="#" id="menu2" onclick="showMenu('glimpse'); return false;">Look Inside</a>
+        <br>
+        <img src="/rudder-bullet.png" alt="">
+        <!-- <a href="#" id="menu3" onclick="showMenu('crew'); return false;">Crew</a>
+        <img src="/rudder-bullet.png"> -->
+        <br>
+        <a href="#" id="menu4" onclick="showMenu('music'); return false;">Music</a>
+        <br>
+        <img src="/rudder-bullet.png" alt="">
+        <br>
+        <a href="#" id="menu5" onclick="showMenu('reviews'); return false;">Reviews</a>
+        <br>
+        <img src="/rudder-bullet.png" alt="">
+        <br>
+        <a href="/admiralty_happy_hour.pdf" id="menu6" target="_blank">Happy Hour</a>
+      </div>
+    </nav>
 
     <main id="flex-container">
-
       <section id="frontpage">
         <div id="address-col">
           <h3 id="address">100 N. Commercial St<br>
@@ -64,7 +91,7 @@
           <img src="/rudder-bullet.png" style="height: 25px; width: 25px" alt="">
           <h4>Tuesday 4-10<br>
           Wednesday 4-10<br>
-          Thursday 4-12<br>
+          Thursday 4-12<br> 
           Friday 4-12<br>
           Saturday 4-12<br>
           Sunday 4-10<br>
