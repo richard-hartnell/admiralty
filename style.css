@@ -12,25 +12,56 @@ body {
     padding-top: 100px;
 }
 
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#burger-icon {
+    padding: 20px;
+    right: 0;
+}
+
+#nav-burger img {
+    height: 3vh;
+    margin: 20px;
+}
+
+#nav-burger {
+    position: fixed;
+    font-size: 3em;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 99;
+    top: 0%;
+    left: 0%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#nav-burger-inside {
+    position: absolute;
+    top: 25%;
+}
+
 nav {
     display: flex;
     align-items: space-between;
     position: fixed;
     width: 100%;
-    /* min-width: 650px; */
     top: 0;
     z-index: 99;
     background-color: #2d4756;
 }
 
 #nav-logo {
-    padding: 0 10px 0 0;
+    padding: 10px;
     margin: 15px 0 0 10px;
-    /* padding-right: 1em; */
 }
 
 #nav-logo img {
-    height: 40px;
+    height: 4em;
 }
 
 a {
@@ -54,9 +85,9 @@ a:hover {
 }
 
 #menu-links {
+    display: none;
     padding-left: 20px;
     padding-top: 20px;
-    position: relative;
  }
 
 #menu-links a {
@@ -109,10 +140,7 @@ h5 {
 #glimpse-wrapper {
     display: none;
     justify-content: center;
-    /* flex-direction: row; */
     flex-wrap: wrap;
-    /* justify-content: space-around; */
-    /* min-width: 650px; */
     max-width: 90%;
 }
 
@@ -171,7 +199,6 @@ h5 {
 }
 
 #crew figcaption {
-    width: 380px;
     text-align: center;
     line-height: 1.3em;
     font-size: 1.25em;
@@ -203,19 +230,19 @@ h5 {
 .show {
     margin: 1em auto;
     max-width: 50%;
-    min-width: 800px;
+    min-width: 40em;
     display: flex;
     border: 4px double goldenrod;
 }
 
 .show-pic {
     height: 500px;
-    width: 375px;
+    /* width: 375px; */
     border: 4px double goldenrod;
 }
 
 .show-info {
-    width: 400px;
+    /* width: 10em; */
     text-align: center;
     color: gold;
     margin: 0 auto;
@@ -235,7 +262,6 @@ h5 {
 .soon {
     text-transform: none;
     line-height: 0.1em;
-    /* padding: 10px 0px; */
 }
 
 .soon h3, .previously h3 {
@@ -273,7 +299,7 @@ h5 {
 #address-col {
     align-self: center;
     text-align: center;
-    min-width: 310px;
+    /* min-width: 310px; */
     white-space: nowrap;
     padding: 0 0 2em 0;
 }
@@ -285,7 +311,7 @@ h5 {
 #hours-col {
     align-self: center;
     text-align: center;
-    min-width: 270px;
+    /* min-width: 270px; */
     text-transform: uppercase;
 }
 
@@ -301,7 +327,12 @@ h5 {
         min-height: 75vh;
     }
 
+    #burger-icon {
+        display: none;
+    }
+
     #menu-links {
+        display: block;
         font-size: clamp(1.5vw, 1.5em, 2em);
     }
 
@@ -341,12 +372,8 @@ h5 {
         white-space: nowrap;
     }    
 
-    nav {
-        min-width: 550px;
-    }
-
     #nav-logo img {
-        height: 75px;
+        min-height: 5em;
     }
 
     h1 {
@@ -369,26 +396,6 @@ h5 {
         font-size: 1.5rem;
     }
 }
-
-#menu1 h2 {
-    font-size: 50px;
-    padding: 10px;
-    line-height: 50px;
-}
-
-#menu1 h5 {
-    translate: 0px -20px;
-}
-
-#menu2 h2 {
-    font-size: 60px;
-    padding: 10px;
-}
-
-#menu2 h5 {
-    translate: 0px -20px;
-}
-
 
 @media only screen and (max-width: 851px) {
     #menu-links {
