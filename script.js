@@ -12,8 +12,12 @@ const menu5 = document.getElementById('menu5');
 
 const burgerMenu = document.getElementById('nav-burger');
 
-function showBurger() {
+function toggleBurger() {
+  if (burgerMenu.style.display === 'none') {
   burgerMenu.style.display = "";
+} else {
+  burgerMenu.style.display = 'none';
+}
 }
 
 function showMenu(menuId) {
