@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,7 +33,7 @@
       </div>
       <div id="burger-icon">
         <a href="#" onclick="showBurger()">
-        <img src="./burger-menu.png" height=75 width=75 alt="A small, three-line icon representing a hamburger menu. When clicked, it opens a dropdown menu." onclick="showBurger()"></a>
+        <img src="./burger-menu.png" height=75 width=75 alt="A small, three-line icon representing a hamburger menu. When clicked, it opens a dropdown menu." onclick="toggleBurger()"></a>
       </div>
       <div id="menu-links">
         <a href="/admiralty_menu.pdf" id="menu1" target="_blank">Menu</a>
@@ -72,7 +73,9 @@
       </div>
     </nav>
 
+
     <main id="flex-container">
+
       <section id="frontpage">
         <div id="address-col">
           <h3 id="address">100 N. Commercial St<br>
@@ -91,13 +94,13 @@
           <img src="/rudder-bullet.png" style="height: 25px; width: 25px" alt="">
           <h4>Tuesday 4-10<br>
           Wednesday 4-10<br>
-          Thursday 4-12<br> 
+          Thursday 4-12<br>
           Friday 4-12<br>
           Saturday 4-12<br>
           Sunday 4-10<br>
           </h4>      
           <img src="/rudder-bullet.png" style="height: 25px; width: 25px" alt="">
-          <div id="twentyone">A 21+ establishment.<br>Closed July 4.</div>
+          <div id="twentyone">A 21+ establishment.</div>
         </div>
       </section>
 
@@ -136,6 +139,7 @@
           <a href="https://www.cascadiadaily.com/news/2023/jul/15/review-the-admiralty-lounge/" target="_blank">
           <img src="/images/reviews/daily.webp" alt="A headline clickable headline linking to the Cascadia Daily's glowing review of Admiralty Lounge."/></a>
         </div>
+        <br>
         <figure>
           <img src="/images/reviews/review_1.webp" alt="A glowing five-star review from Google Maps."/>
         </figure>
@@ -203,21 +207,6 @@
         <h1>MUSIC</h1>
 
         <figure class="show">
-          <img class="show-pic" src="/images/music/ludlings.webp" loading="lazy" alt="Two white 20somethings, both facing each other intently in profile with their hands placed together as if praying. She has long, wavy, blonde hair and he has dark brown hair, a trim beard, and glasses. Both wear plaid flannel shirts. The background is a fluorescent close-up of a Polish dictionary. They both look like they are very good at playing music.">
-          <figcaption class="show-info">
-            <section class="music-bio">
-              <h2>Ludlings</h2>
-              <h6>Indie-rock/pop/folk band Ludlings formed in Bellingham in 2018 when Ariel and Van met as the result of a very fortuitous Craigslist posting. Following the bringing on of Walker on drums, the trio quickly began recording and playing shows throughout Whatcom and Skagit county for the next year and a half.<br>
-                <br>
-                Despite the group eventually moving to all different parts of the world and Walker eventually moving on, Ariel and Van continued to play and record together remotely, eventually releasing “Old Feelings”, their debut album with the collaboration and support from family and friends along the way.</h6>
-            </section>
-            <section class="showtime">
-              <h6>Tuesday, July 9, 7p - 9p</h6>
-            </section>
-          </figcaption>
-        </figure>
-
-        <figure class="show">
           <img class="show-pic" src="/images/music/nora_louis.webp" alt="A collage of singer-songwriters all playing guitars and singing into microphones. They both look as if they are very good at playing music.">
           <figcaption class="show-info">
             <section class="music-bio">
@@ -246,6 +235,26 @@
         </figure>
 
         <figure class="show">
+          <img class="show-pic" src="images/music/brooke_bates_sam_chue.webp" loading="lazy" alt="A split image of singers-songwriters Brooke Bates and Sam Chue. Brooke stands in the aisle of an old-time train, beaming a golden smile. Sam sings passionately into a microphone in a psychedelically lit room. They both look like superb musicians." />
+          <figcaption class="show-info">
+            <section class="music-bio">
+              <h2>Brooke Bates<br>&<br>Sam Chue</h2>
+              <h6>Brooke Bates brings sound loaded with soaring emotion mixed with gritty, unapologetic truths. Bates draws on her turbulent past, using songwriting to navigate the dark struggles that shape her art. Boasting powerhouse vocals and dynamic highs and lows, Brooke Bates is a one stop shop.<br>
+<br>
+Classically trained and vocally heavy, she dips and soars through a three-octave range. Her debut single "Complicated" reels with multifaceted emotions influenced by varying degrees of relationships. Like much of her songwriting, it highlights internal struggles, seldom spoken.<br>
+<br>
+Sam Chue, local outsider sing-songwriter, plays a mix of his newest songs and a few tunes from the past.<br>
+                <br>
+                He has been playing original music in Bellingham and out of his car throughout the I-90 corridor since 2007 and brings a refreshing spin to the folk genre.
+                </h6>
+            </section>
+            <section class="showtime">
+              <h6>Tuesday, July 30, 7p - 9p</h6>
+            </section>
+          </figcaption>
+        </figure>
+
+        <figure class="show">
           <img class="show-pic" src="images/music/jan_and_kera.webp" alt="In front of a beautiful and humongous spherical cutout lamp, two string players duet; him in a flat cap and sweater, her with a brown ponytail and warm-toned clothes. They both look like very experienced musicians.">
           <figcaption class="show-info">
             <section class="music-bio">
@@ -255,6 +264,61 @@
             </section>
             <section class="showtime">
               <h6>Friday, August 2, 7p - 9p</h6>
+            </section>
+          </figcaption>
+        </figure>
+
+        <figure class="show">
+          <img class="show-pic" src="images/music/david_donohue.webp" loading="lazy" alt="A 50-ish white man in spectacles, a plaid shirt, and a wide-brimmed hat sings into a microphone while playing an acoustic guitar.">
+          <figcaption class="show-info">
+            <section class="music-bio">
+              <h2>David Donohue</h2>
+                <h3>with special guest</h3>
+              <h6>From ballads about the expulsion of the Chinese workers, to sailing on Bellingham Bay on a tiny sailboat in a storm, David Donohue sings well-crafted, lyrical songs of life and living in and around Bellingham.<br></h6>
+            </section>
+            <section class="showtime">
+              <h6>Tuesday, August 6, 7p - 9p</h6>
+            </section>
+          </figcaption>
+        </figure>
+
+        <figure class="show">
+          <img class="show-pic" src="/images/music/raggedy_adler.webp" loading="lazy" alt="Three young, farm-punky people stand in a field next to a barn playing a fiddle, a banjo, and the bones. They look like they play together really well.">
+          <figcaption class="show-info">
+            <section class="music-bio">
+              <h2>Raggedy Adler</h2>
+              <h6>Raggedy Adler is a transient folk, old-time, and punk band composed of queer vagabonds and train hoppers. We perform a variety of original compositions and historical folk tunes through the lens of our experiences living through disenfranchisement and building community. We hope to impart the stories of an oft overlooked underclass using the folk tradition as our medium.</h6>
+            </section>
+            <section class="showtime">
+              <h6>Tuesday, August 13, 7p - 9p</h6>
+            </section>
+          </figcaption>
+        </figure>
+
+        <figure class="show">
+          <img class="show-pic" src="images/music/sarah_goodin.webp" loading="lazy" alt="A young woman with horn-rimmed glasses framed by long, dark blonde hair smiles sweetly at her cat in the foreground. She looks like a very soulful musician." />
+          <figcaption class="show-info">
+            <section class="music-bio">
+              <h3>sleepy Sundays feat.</h3>
+              <h2>Sarah Goodin</h2>
+              <h6>Sarah Goodin is a singer-songwriter from Bellingham, WA known for her mellifluous voice and poignant songwriting. Her mother tells a story of Goodin as a toddler, crawling up onto the kitchen table and dancing and singing along to Lionel Richie while her mother did dishes. Now she is the full-time parent of a gorgeous, brilliant, and hilarious child of her own. Chorally trained with a lifelong love for jazz, folk, blues, and classical music, Sarah is a veteran of Bellingham's open mic and songwriting circles.<br>
+                </h6>
+            </section>
+            <section class="showtime">
+              <h6>Sunday, August 18, 7p - 9p</h6>
+            </section>
+          </figcaption>
+        </figure>
+
+        <figure class="show">
+          <img class="show-pic" src="images/music/morgan_mchugh.webp" loading="lazy">
+          <figcaption class="show-info">
+            <section class="music-bio">
+              <h2>Morgan McHugh</h2>
+              <h6>Morgan McHugh boldly pens his own entry in the decades-old folk-americana songbook. Powerful vocals that cut to the bone. "I write from the heart and I really think about what I'm writing," he notes. "There's a real ebb and flow to the process. For the past few years I've spent the summers on fishing boats in Alaska, and when I don't have cell service and I'm really off the grid I have a lot of time to think. It is when the creative process really gets rolling." McHugh's songs come from a deeply personal perspective; clean, honest and dripping with truth.</h6>
+            </section>
+            <section class="showtime">
+              <h6>Tuesday, August 27, 7p - 9p</h6>
             </section>
           </figcaption>
         </figure>
@@ -276,29 +340,18 @@
         <figure class="soon">
           <br>
           <h3>A L S O</h3><br>
-          <h4>Bastille Day Party</h4>
-          <h5>July 14</h5><br>
           <h4>Tad Kroening</h4>
           <h5>July 23</h5><br>
-          <h4>Brooke Bateman</h4>
-          <h5>July 30</h5><br>
-          <h4>David Donohue</h4>
-          <h5>August 6</h5><br>
-          <h4>Lizzie</h4>
-          <h5>August 13</h5><br>
-          <h4>Sarah Goodin</h4>
-          <h5>August 18</h5><br>
           <h4>The White Ducks</h4>
           <h5>August 20</h5><br>
-          <h4>Morgan McHugh</h4>
-          <h5>August 27</h5><br>
-          <h4>Shannon Patiño</h4>
-          <h5>September 6</h5><br>
         </figure>
 
         <figure class="previously">
           <h3>P R E V I O U S L Y</h3>
           <h5>
+          Ludlings<br>
+          Towse<br>
+          Channing Waage<br>
           Matney Cook<br>
           Ivan Sandomire<br>
           Roger Thorne<br>
