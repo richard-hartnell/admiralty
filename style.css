@@ -17,7 +17,8 @@ body {
 #navbar {
     display: flex;
     justify-content: space-between;
-    max-width: 100vw;
+    max-width: 99vw;
+    right: 5;
 }
 
 #burger-icon {
@@ -237,7 +238,7 @@ h5 {
 
 .show {
     margin: 1em auto;
-    max-width: 50%;
+    min-width: 50vw;
     /* min-width: 40em; */
     display: flex;
     border: 4px double goldenrod;
