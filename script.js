@@ -21,8 +21,9 @@ function toggleBurger() {
 }
 
 function showMenu(menuId) {
-  toggleBurger()
-
+  if (burgerMenu.style.display === '') {
+    toggleBurger()
+  }
   if (menuId === 'glimpse') {
     menu.style.display = 'none';
     glimpse.style.display = 'flex';
