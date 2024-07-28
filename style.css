@@ -92,7 +92,8 @@ a:hover {
     display: none;
     padding-left: 20px;
     padding-top: 20px;
-    right: 0;
+    left: 0;
+    position: relative;
     
  }
 
@@ -160,15 +161,12 @@ h5 {
 #reviews-wrapper {
     display: none;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: space-evenly;
-    /* max-width: 70vw; */
 }
 
 #reviews-wrapper img {
     border: 4px double goldenrod;
     box-shadow: 1px 1px 6px black;
-    /* max-width: 100%; */
     min-width: 50%;
 }
 
@@ -239,22 +237,17 @@ h5 {
 .show {
     margin: 1em auto;
     min-width: 50vw;
-    /* min-width: 40em; */
-    /* display: flex; */
     border: 4px double goldenrod;
 }
 
 .show-pic {
-    /* width: 90vw; */
     height: 100%;
     style: inline-block;
-    /* width: 375px; */
     border: 4px double goldenrod;
     display: block;
 }
 
 .show-info {
-    /* width: 10em; */
     text-align: center;
     color: gold;
     margin: 0 auto;
@@ -311,7 +304,6 @@ h5 {
 #address-col {
     align-self: center;
     text-align: center;
-    /* min-width: 310px; */
     white-space: nowrap;
     padding: 0 0 2em 0;
 }
@@ -323,7 +315,6 @@ h5 {
 #hours-col {
     align-self: center;
     text-align: center;
-    /* min-width: 270px; */
     text-transform: uppercase;
 }
 
