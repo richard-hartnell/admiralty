@@ -17,8 +17,8 @@ body {
 #navbar {
     display: flex;
     justify-content: space-between;
-    width: 99%;
-    right: 5;
+    min-width: 100%;
+    /* right: 0; */
 }
 
 #burger-icon {
@@ -65,7 +65,8 @@ nav {
 }
 
 #nav-logo img {
-    height: 4em;
+    max-width: 55vw;
+    max-height: 6em;
 }
 
 a {
@@ -78,13 +79,13 @@ a:hover {
 }
 
 #toasttab-button, #reservation-button {
-    justify-self: center;
+    /* justify-self: center; */
     height: 5em;
     border: 2px solid seashell;
     border-radius: 5%;
-    padding: 1em 1em;
+    padding: 0.5em 0.5em;
     margin: 2% 0;
-    font-size: 1.5em;
+    font-size: 1.25em;
     white-space: nowrap;
 }
 
@@ -237,16 +238,16 @@ h5 {
 
 .show {
     margin: 1em auto;
-    min-width: 50vw;
+    /* min-width: 50vw; */
     border: 4px double goldenrod;
     display: flex;
+    flex-direction: row;
 }
 
 .show-pic {
-    height: 100%;
-    
+    /* max-width: 90vw; */
     border: 4px double goldenrod;
-    /* display: inline-block; */
+    /* max-width: 30em; */
 }
 
 .show-info {
@@ -407,15 +408,18 @@ h5 {
         font-size: 3vw;
     }
 
-    .show-pic {
-        position: relative;
-        max-width: 100%;
-        min-width: 99%;
+    .show {
+        display: relative;
+        width: 95vw;
     }
+
 }
 
-@media only screen and (aspect-ratio < 0.7) {
-    #menu-links a{
-        font-size: clamp(2em, 3em, 5vw);
+@media only screen and (aspect-ratio < 1) {
+    
+    .show {
+        flex-direction: column;
+        max-width: 90vw;
     }
+
 }
