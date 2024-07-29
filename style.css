@@ -149,7 +149,7 @@ h5 {
     display: none;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 90%;
+    /* max-width: 90%; */
 }
 
 #glimpse-wrapper figure img {
@@ -327,7 +327,14 @@ h5 {
     font-size: 1.2em;
 }
 
+
 @media only screen and (aspect-ratio > 1) {
+    
+    .show {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
     #anchor-logo img {
         height: 100vh;
         min-height: 75vh;
@@ -351,6 +358,12 @@ h5 {
         min-width: 60%;
         max-width: 75%;
         margin: 0 auto;
+    }
+
+    #glimpse-wrapper figure img {
+        min-width: 75vw;
+        height: auto;
+        overflow-x: hidden;
     }
 
     #frontpage {
@@ -401,25 +414,4 @@ h5 {
     h5 {
         font-size: 1.5rem;
     }
-}
-
-@media only screen and (max-width: 851px) {
-    #menu-links {
-        font-size: 3vw;
-    }
-
-    .show {
-        display: relative;
-        width: 95vw;
-    }
-
-}
-
-@media only screen and (aspect-ratio < 1) {
-    
-    .show {
-        flex-direction: column;
-        max-width: 90vw;
-    }
-
 }
