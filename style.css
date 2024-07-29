@@ -161,6 +161,7 @@ h5 {
 #reviews-wrapper {
     display: none;
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -238,13 +239,14 @@ h5 {
     margin: 1em auto;
     min-width: 50vw;
     border: 4px double goldenrod;
+    display: flex;
 }
 
 .show-pic {
     height: 100%;
-    style: inline-block;
+    
     border: 4px double goldenrod;
-    display: block;
+    /* display: inline-block; */
 }
 
 .show-info {
@@ -409,7 +411,6 @@ h5 {
         position: relative;
         max-width: 100%;
         min-width: 99%;
-        style: block;
     }
 }
 
