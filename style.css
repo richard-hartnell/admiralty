@@ -360,6 +360,11 @@ h5 {
         margin: 0 auto;
     }
 
+    #glimpse-wrapper {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
     #glimpse-wrapper figure img {
         min-width: 75vw;
         height: auto;
