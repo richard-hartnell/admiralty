@@ -16,7 +16,7 @@ body {
 
 #navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     min-width: 100%;
     /* right: 0; */
 }
@@ -24,6 +24,7 @@ body {
 #burger-icon {
     padding: 20px;
     right: 0;
+    display: none;
 }
 
 #nav-burger img {
@@ -90,7 +91,8 @@ a:hover {
 }
 
 #menu-links {
-    display: none;
+    display: block;
+    font-size: clamp(1.5vw, 1.5em, 2em);
     padding-left: 20px;
     padding-top: 20px;
     left: 0;
@@ -237,16 +239,20 @@ h5 {
 }
 
 .show {
-    margin: 1em auto;
-    /* min-width: 50vw; */
-    border: 4px double goldenrod;
     display: flex;
+    margin: 1em auto;
     flex-direction: row;
+    max-width: 95vw;
+    min-width: 80%;
+    /* padding-top: 3em; */
+    border: 4px double goldenrod;
 }
 
 .show-pic {
     /* max-width: 90vw; */
     border: 4px double goldenrod;
+    height: 40%;
+    align-self: center;
     /* max-width: 30em; */
 }
 
@@ -256,6 +262,7 @@ h5 {
     margin: 0 auto;
     font-size: clamp(1.0em, 1.25em, 1.5em);
     text-shadow: 1px 1px 0px black;
+    min-width: 12em;
 }
 
 .show-info h2 {
@@ -283,7 +290,7 @@ h5 {
 }
 
 .music-bio h2 {
-    font-size: 1.52em;
+    font-size: 1.05em;
     line-height: 0.9em;
 }
 
@@ -328,12 +335,16 @@ h5 {
 }
 
 
-@media only screen and (aspect-ratio > 1) {
+@media only screen and (aspect-ratio < 1.2) {
     
     .show {
         flex-direction: column;
-        max-width: 90vw;
     }
+
+    .show-pic {
+        align-self: center;
+        /* height: auto; */
+    }  
 
     #anchor-logo img {
         height: 100vh;
@@ -341,12 +352,11 @@ h5 {
     }
 
     #burger-icon {
-        display: none;
+        display: block;
     }
 
     #menu-links {
-        display: block;
-        font-size: clamp(1.5vw, 1.5em, 2em);
+        display: none;
     }
 
     #reviews-wrapper {
@@ -418,5 +428,11 @@ h5 {
     
     h5 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 950px) and (max-height: 600px){
+    .show-pic {
+        max-width: 50vw;
     }
 }
