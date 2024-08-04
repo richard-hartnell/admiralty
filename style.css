@@ -17,7 +17,7 @@ body {
 #navbar {
     display: flex;
     justify-content: space-around;
-    min-width: 100%;
+    /* min-width: 155vw; */
     /* right: 0; */
 }
 
@@ -54,7 +54,7 @@ nav {
     display: flex;
     align-items: space-between;
     position: fixed;
-    width: 100%;
+    min-width: 100vw;
     top: 0;
     z-index: 99;
     background-color: #2d4756;
@@ -137,7 +137,9 @@ h5 {
 
 #frontpage {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 75vh;
+    gap: 20px;
     align-content: center;
     justify-content: center;
 }
@@ -307,7 +309,7 @@ h5 {
 }
 
 #anchor-logo img {
-    max-height: 40vh;
+    max-height: 60vh;
     margin: auto;
 }
 
@@ -326,6 +328,7 @@ h5 {
     align-self: center;
     text-align: center;
     text-transform: uppercase;
+    min-width: 13em;
 }
 
 #twentyone {
@@ -347,8 +350,7 @@ h5 {
     }  
 
     #anchor-logo img {
-        height: 100vh;
-        min-height: 75vh;
+        max-height: 35vh;
     }
 
     #burger-icon {
@@ -382,12 +384,9 @@ h5 {
     }
 
     #frontpage {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-direction: row;
-        height: 75vh;
-        gap: 20px;
+        flex-direction: column;
+        align-items: space-around;
+        padding-top: 20em;
     }
 
     #address-col {
@@ -401,7 +400,6 @@ h5 {
         border: 2px solid seashell;
         border-radius: 5%;
         padding: 1em 0;
-        margin: 2% 0;
         font-size: 1.5em;
         white-space: nowrap;
     }    
