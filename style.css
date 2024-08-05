@@ -244,8 +244,8 @@ h5 {
     display: flex;
     margin: 1em auto;
     flex-direction: row;
-    max-width: 95vw;
-    min-width: 80%;
+    max-width: 65vw;
+    min-width: 65vw;
     /* padding-top: 3em; */
     border: 4px double goldenrod;
 }
@@ -337,15 +337,17 @@ h5 {
     font-size: 1.2em;
 }
 
-
+/* PORTRAIT NOT LANDSCAPE */
 @media only screen and (aspect-ratio < 1.2) {
     
     .show {
         flex-direction: column;
+        max-width: 95vw;
     }
 
     .show-pic {
         align-self: center;
+        max-width: 100%;
         /* height: auto; */
     }  
 
