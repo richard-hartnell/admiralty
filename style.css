@@ -16,7 +16,6 @@ body {
 
 #navbar {
     display: flex;
-    /* justify-content: space-around; */
     /* min-width: 155vw; */
     /* right: 0; */
 }
@@ -38,7 +37,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: 99;
-    top: 2em;
+    top: 2.5em;
     left: 0%;
     margin: 0 auto;
     justify-content: center;
@@ -47,7 +46,7 @@ body {
 
 #nav-burger-inside {
     position: absolute;
-    top: 25%;
+    top: 20%;
 }
 
 nav {
@@ -62,11 +61,12 @@ nav {
 
 #nav-logo {
     padding: 10px;
+    width: auto;
     margin: 15px 0 0 10px;
 }
 
 #nav-logo img {
-    max-width: 55vw;
+    max-width: 65vw;
     max-height: 6em;
 }
 
@@ -84,9 +84,9 @@ a:hover {
     height: 5em;
     border: 2px solid seashell;
     border-radius: 5%;
-    padding: 0.5em 0.5em;
+    padding: 1em 1em;
     margin: 2% 0;
-    font-size: 1.25em;
+    font-size: 1.5em;
     white-space: nowrap;
 }
 
@@ -265,6 +265,8 @@ h5 {
     font-size: clamp(1.0em, 1.25em, 1.5em);
     text-shadow: 1px 1px 0px black;
     min-width: 12em;
+    max-width: 40%;
+    align-content: center;
 }
 
 .show-info h2 {
@@ -343,6 +345,7 @@ h5 {
     .show {
         flex-direction: column;
         max-width: 95vw;
+        margin: 0 auto;
     }
 
     .show-pic {
@@ -353,6 +356,11 @@ h5 {
 
     #anchor-logo img {
         max-height: 35vh;
+    }
+
+    #navbar {
+            justify-content: space-around;
+
     }
 
     #burger-icon {
@@ -435,4 +443,30 @@ h5 {
     .show-pic {
         max-width: 50vw;
     }
+}
+
+@media (max-width: 700px) {
+    #nav-burger-inside {
+        position: absolute;
+        top: 15%;
+    }
+    
+    #nav-burger {
+        top: 2.4em;
+    }
+
+    nav, #navbar {
+        min-width: 100vw;
+        right: 0;
+    }
+
+    #reviews-wrapper img {
+        max-width: 99vw;
+    }
+
+    .show-info {
+        max-width: 90%;
+    }
+
+
 }
