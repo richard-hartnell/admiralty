@@ -12,17 +12,20 @@ const menu5 = document.getElementById('menu5');
 
 const burgerMenu = document.getElementById('nav-burger');
 
+burgerMenu.style.opacity = 0;
+burgerMenu.style.display = "";
+
 function toggleBurger() {
-  if (burgerMenu.style.display === 'none') {
-  burgerMenu.style.display = "";
-} else {
-  burgerMenu.style.display = 'none';
-}
+  if (burgerMenu.style.opacity == 0) {
+  burgerMenu.style.opacity = 1;
+  } else {
+    burgerMenu.style.opacity = 0;
+  }
 }
 
 function showMenu(menuId) {
-  if (burgerMenu.style.display === '') {
-    toggleBurger()
+  if (burgerMenu.style.opacity == 0) {
+    toggleBurger
   }
   if (menuId === 'glimpse') {
     menu.style.display = 'none';

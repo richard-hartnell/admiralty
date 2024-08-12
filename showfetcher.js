@@ -19,3 +19,5 @@ const template = `
     </figcaption>
 </figure>
 `
+
+console.log(template);

@@ -42,6 +42,8 @@ body {
     margin: 0 auto;
     justify-content: center;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.05s linear;
 }
 
 #nav-burger-inside {
