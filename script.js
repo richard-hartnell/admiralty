@@ -24,9 +24,9 @@ function toggleBurger() {
 }
 
 function showMenu(menuId) {
-  if (burgerMenu.style.opacity == 0) {
-    toggleBurger
-  }
+  
+    toggleBurger();
+
   if (menuId === 'glimpse') {
     menu.style.display = 'none';
     glimpse.style.display = 'flex';

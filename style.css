@@ -3,7 +3,6 @@
     src: url('./MINERVAM.OTF') format("opentype");
 }
 
-
 body {
     background-color: #2d4756;
     color: seashell;
@@ -16,8 +15,6 @@ body {
 
 #navbar {
     display: flex;
-    /* min-width: 155vw; */
-    /* right: 0; */
 }
 
 #burger-icon {
@@ -248,16 +245,13 @@ h5 {
     flex-direction: row;
     max-width: 65vw;
     min-width: 65vw;
-    /* padding-top: 3em; */
     border: 4px double goldenrod;
 }
 
 .show-pic {
-    /* max-width: 90vw; */
     border: 4px double goldenrod;
     height: 40%;
     align-self: center;
-    /* max-width: 30em; */
 }
 
 .show-info {
