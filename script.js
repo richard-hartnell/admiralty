@@ -15,17 +15,20 @@ const burgerMenuIcon = document.getElementById('burger-icon');
 
 burgerMenu.style.opacity = 0;
 burgerMenu.style.display = "";
+burgerMenu.style.pointerEvents = 'none';
 
 function toggleBurger() {
   if (burgerMenu.style.opacity == 0) {
   burgerMenu.style.opacity = 1;
+  burgerMenu.style.pointerEvents = 'auto';
   } else {
     burgerMenu.style.opacity = 0;
+    burgerMenu.style.pointerEvents = 'none';
   }
 }
 
 function showMenu(menuId) {
-  if (burgerMenuIcon.style.display == 'block') {
+  if (burgerMenuIcon.style.display == 'block' || burgerMenu.style.opacity == 1) {
     toggleBurger();
   } else {
     
