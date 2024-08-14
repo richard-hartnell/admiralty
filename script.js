@@ -11,6 +11,7 @@ const menu4 = document.getElementById('menu4');
 const menu5 = document.getElementById('menu5');
 
 const burgerMenu = document.getElementById('nav-burger');
+const burgerMenuIcon = document.getElementById('burger-icon');
 
 burgerMenu.style.opacity = 0;
 burgerMenu.style.display = "";
@@ -24,8 +25,11 @@ function toggleBurger() {
 }
 
 function showMenu(menuId) {
-  
+  if (burgerMenuIcon.style.display == 'block') {
     toggleBurger();
+  } else {
+    
+  }
 
   if (menuId === 'glimpse') {
     menu.style.display = 'none';
