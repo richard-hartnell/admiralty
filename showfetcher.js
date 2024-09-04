@@ -64,6 +64,7 @@ function fetchShowSheet(url) {
                     <figure class="previously">
                         <h3>P R E V I O U S L Y</h3>
                         <h5>
+                        The White Ducks<br>
                         Raggedly Adler<br>
                         Brooke Bates<br>
                         Tad Kroening<br>
