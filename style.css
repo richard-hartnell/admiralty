@@ -65,7 +65,7 @@ nav {
 }
 
 #nav-logo img {
-    max-width: 65vw;
+    max-width: 60vw;
     max-height: 6em;
 }
 
@@ -141,6 +141,7 @@ h5 {
     gap: 20px;
     align-content: center;
     justify-content: center;
+    /* margin: 0 auto; */
 }
 
 #address {
@@ -315,7 +316,8 @@ h5 {
     align-self: center;
     text-align: center;
     white-space: nowrap;
-    padding: 0 0 2em 0;
+    /* padding: 0 0 2em 0; */
+    /* width: 20%; */
 }
 
 #address-col a {
@@ -326,13 +328,21 @@ h5 {
     align-self: center;
     text-align: center;
     text-transform: uppercase;
-    min-width: 13em;
+    min-width: 16em;
+    /* width: 20%; */
 }
 
 #twentyone {
     padding: 1.5em 0;
     text-transform: initial;
     font-size: 1.2em;
+}
+
+/* LANDSCAPE NOT PORTRAIT */
+@media only screen and (aspect-ratio > 1) {
+    #frontpage {
+        padding-right: 5%;
+    }
 }
 
 /* PORTRAIT NOT LANDSCAPE */
