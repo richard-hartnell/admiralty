@@ -476,3 +476,10 @@ h5 {
 
 
 }
+
+@media only screen and (max-height: 1000px) {
+
+    .show img {
+        max-width: 60%;
+    }
+}
