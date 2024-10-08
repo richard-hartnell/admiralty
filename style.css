@@ -327,7 +327,6 @@ h5 {
 #hours-col {
     align-self: center;
     text-align: center;
-    text-transform: uppercase;
     min-width: 16em;
     /* width: 20%; */
 }
