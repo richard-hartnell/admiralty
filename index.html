@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,7 +29,6 @@
     <meta http-equiv="Expires" content="0">
     <link rel="preload" as="font" href="./MINERVAM.OTF">    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-
   </head>
 
   <body>
@@ -42,7 +42,11 @@
         <img src="./burger-menu.png" height=75 width=75 alt="A small, three-line icon representing a hamburger menu. When clicked, it opens a dropdown menu." onmousedown="toggleBurger()"></a>
       </div>
       <div id="menu-links">
-        <a href="/admiralty_menu.pdf" id="menu1" target="_blank">Menu</a>
+        <a href="/admiralty_food.pdf" id="menu1" target="_blank">Food</a>
+        <img src="/rudder-bullet.png" alt="">
+        <a href="/admiralty_drinks.pdf" id="menu1" target="_blank">Drinks</a>
+        <img src="/rudder-bullet.png" alt="">
+        <a href="/admiralty_togo.pdf" id="menu1" target="_blank">To-Go</a>
         <img src="/rudder-bullet.png" alt="">
         <a href="#" id="menu2" onclick="showMenu('glimpse'); return false;">Look Inside</a>
         <img src="/rudder-bullet.png" alt="">
@@ -57,7 +61,19 @@
     </nav>
     <nav id="nav-burger" style="display: none">
       <div id="nav-burger-inside">
-        <a href="/admiralty_menu.pdf" id="menu1" target="_blank">Menu</a>
+        <a href="/admiralty_menu.pdf" id="menu1" target="_blank">Food</a>
+        <br>
+        <img src="/rudder-bullet.png" alt="">
+        <br>
+        <a href="/admiralty_drinks.pdf" id="menu1" target="_blank">Drinks</a>
+        <br>
+        <img src="/rudder-bullet.png" alt="">
+        <br>
+        <a href="/admiralty_togo.pdf" id="menu1" target="_blank">To-Go</a>
+        <br>
+        <img src="/rudder-bullet.png" alt="">
+        <br>
+        <a href="/admiralty_happy_hour.pdf" id="menu1" target="_blank">Happy Hour</a>
         <br>
         <img src="/rudder-bullet.png" alt="">
         <br>
@@ -73,9 +89,6 @@
         <br>
         <a href="#" id="menu5" onclick="showMenu('reviews'); return false;">Reviews</a>
         <br>
-        <img src="/rudder-bullet.png" alt="">
-        <br>
-        <a href="/admiralty_happy_hour.pdf" id="menu6" target="_blank">Happy Hour</a>
       </div>
     </nav>
 
@@ -99,11 +112,12 @@
           <!-- <h1>Hours</h1> -->
           <img src="/rudder-bullet.png" style="height: 25px; width: 25px" alt="">
           <h4>
-            Sunday - Wednesday:<br>
-            4 PM - 11 PM<br>
-            <br>
-            Thursday - Saturday:<br>
-            4 PM - 12 AM<br>
+            <h4>Tuesday 4-10<br>
+              Wednesday 4-10<br>
+              Thursday 4-12<br>
+              Friday 4-12<br>
+              Saturday 4-12<br>
+              Sunday 4-10<br>
           </h4>      
           <img src="/rudder-bullet.png" style="height: 25px; width: 25px" alt="">
           <div id="twentyone">A 21+ establishment.</div>
