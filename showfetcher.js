@@ -64,6 +64,9 @@ function fetchShowSheet(url) {
                     <figure class="previously">
                         <h3>P R E V I O U S L Y</h3>
                         <h5>
+                        Elaine Eagle<br>
+                        Spoon River<br>
+                        Steve Itterly<br>
                         The White Ducks<br>
                         Raggedly Adler<br>
                         Brooke Bates<br>
