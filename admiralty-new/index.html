@@ -6,8 +6,32 @@
 -->
 <html>
 	<head>
-		<title>Untitled</title>
+		<title>The Admiralty Lounge</title>
 		<meta charset="utf-8" />
+		<!-- <link rel="stylesheet" href="/style.css"> -->
+		<meta property="og:site_name" content="The Admiralty Lounge"/>
+		<meta property="og:title" content="The Admiralty Lounge"/>
+		<meta property="og:url" content="https://www.theadmiraltylounge.com"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="/anchor-logo.webp"/>
+		<meta property="og:image:width" content="1500"/>
+		<meta property="og:image:height" content="410"/>
+		<meta itemprop="name" content="The Admiralty Lounge"/>
+		<meta itemprop="url" content="https://www.theadmiraltylounge.com"/>
+		<meta itemprop="thumbnailUrl" content="./anchor-logo.webp"/>
+		<link rel="image_src" href="/anchor-logo.webp" />
+		<link rel="shortcut icon" href="/rudder-bullet.png">
+		<meta itemprop="image" content="/anchor-logo.webp"/>
+		<meta name="twitter:title" content="The Admiralty Lounge"/>
+		<meta name="twitter:image" content="/anchor-logo.webp"/>
+		<meta name="twitter:url" content="https://www.theadmiraltylounge.com"/>
+		<meta name="twitter:card" content="summary"/>
+		<meta name="description" content="The Admiralty Lounge is a winsome nautical-themed bar near Bellingham, Washington's historic Mount Baker Theatre.">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<link rel="preload" as="font" href="./MINERVAM.OTF">    
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js" defer></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -19,7 +43,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">The Admiralty Lounge</a></h1>
+						<h1><a href="index.html"><img src="../logo-nav.webp" style="max-height: 3.6em; padding-top: 0.4em; padding-bottom: 0.4em" alt="The Admiralty Lounge Logo" /></a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -31,53 +55,61 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
+								<li><a href="admiralty_food.pdf">Food</a></li>
+								<li><a href="admiralty_drinks.pdf">Drinks</a></li>
+								<li><a href="admiralty_happyhour.pdf">Happy Hour</a></li>
+								<!-- <li><a href="admiralty-mon-late.pdf">Monday & Late</a></li> -->
+								<!-- <li><a href="crew.html">Crew</a></li> -->
+								<li><a href="music.html">Music</a></li>
+								<!-- <li><a href="#">Sign Up</a></li> -->
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
 					</nav>
 
-				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
 							<img src="../logo-nav.webp" style="max-width: 90%" alt="The Admiralty Lounge Logo" />
-							<!-- <h2>The Admiralty Lounge</h2> --><br>
-							<p>Aliquet enim cep justo adipiscing erat accumsan at Parturient</p>
+							<!-- <h2>The Admiralty Lounge</h2> --><br><br>
+							<p>Some fancy byline if you like</p>
+							          <!-- <a href="https://www.toasttab.com/admiralty-lounge-100-n-commercial-st/v3" id="toasttab-button" data-initialized="true" class="frontpage-button">
+            To-Go & Delivery
+          </a>
+          <a href="https://www.opentable.com/r/the-admiralty-lounge-reservations-bellingham?restref=1282618&lang=en-US&ot_source=Restaurant%20website" id="reservation-button" target="_blank" class="frontpage-button">
+            Reservations
+          </a> -->
+		  
 						</div>
 					</section>
 
-				<!-- Wrapper -->
 					<section id="wrapper">
 
-						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
 									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Local roots; the world's flavors</h2>
+										<p>Byline number two-- a little spacing.</p>
+										<script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=1282618&type=button&theme=standard&color=3&dark=true&iframe=true&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website&cfe=true'></script>
 									</div>
 								</div>
 							</section>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
+							<section id="two" class="wrapper alt spotlight style2" style="background-image: url('../images/small-plates/fare.jpg'); background-size: cover; background-position: center;">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="../images/small-plates/fare.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Tempus adipiscing</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">FARE</h2>
+										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elitfdsjflksjafklsjdakl;fjkl. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna.</p>
+										<a href="./admiralty_food.pdf" class="special">Dinner</a>
+										<a href="./admiralty_drinks.pdf" class="special">Drinks</a>
+										<a href="./admiralty_happy_hour.pdf" class="special">Happy Hour</a>
+										<a href="./admiralty_mon_late.pdf" class="special">Mondays & Late</a>
 									</div>
 								</div>
 							</section>
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
+							<!-- <section id="three" class="wrapper spotlight style3">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content">
@@ -86,41 +118,40 @@
 										<a href="#" class="special">Learn more</a>
 									</div>
 								</div>
-							</section>
+							</section> -->
 
-						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<h2 class="major">Music</h2>
+									<p>Sublime shows for bespoke folk.</p>
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<h3 class="major">Show One</h3>
+											<p>Short description.</p>
+											<a href="#" class="special">More</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<h3 class="major">Show Two</h3>
+											<p>Short description.</p>
+											<a href="#" class="special">More</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<h3 class="major">Show Three</h3>
+											<p>Short description.</p>
+											<a href="#" class="special">More</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<h3 class="major">Show Four</h3>
+											<p>Short description.</p>
+											<a href="#" class="special">More</a>
 										</article>
 									</section>
 									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
+										<li><a href="#" class="button">Full schedule</a></li>
 									</ul>
 								</div>
 							</section>
@@ -130,41 +161,31 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+							<h2 class="major">Get In Touch</h2>
+							<!-- <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p> -->
+							<ul class="contact">
+								<li class="icon solid fa-clock">
+									Monday 4-10<br />
+									Tuesday 4-10<br />
+									Wednesday 4-10<br />
+									Thursday 4-12<br />
+									Friday 4-12<br />
+									Saturday 4-12<br />
+									Sunday 4-10<br />
+								</li>
+							</ul>
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
+									The Admiralty Lounge<br />
+									100 N Commercial St<br />
+									Bellingham, WA 98225
 								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<li class="icon solid fa-phone">360-392-8070</li>
+								<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/admiralty.lounge">admiralty.lounge</a></li>
+								<li class="icon brands fa-instagram"><a href="https://instagram.com/the-admiralty-lounge">the-admiralty-lounge</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li>
+								<li>&copy; Hartnell Ent c/o Pixelarity. All rights reserved.</li>
 							</ul>
 						</div>
 					</section>
@@ -180,4 +201,6 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	
+<script src="/showfetcher.js"></script>
 </html>
