@@ -4,6 +4,7 @@ let counter = 0;
 let lazy = false;
 let allShows = [];
 let showSection = '';
+// TODO: differentiate between index and music, and populate on each page. bangarang!
 
 function addShow(show, lazy) {
     let showName = show[0];
@@ -18,12 +19,21 @@ function addShow(show, lazy) {
         lazyTag = 'loading="lazy"';
     }
 
-    let showTemplate = `
+    let showTemplateMain = `
     <article>
         <a href="#" class="image"><img src="images/music/${showImage}" ${lazyTag} alt="${showAltText}" /></a>
         <h3 class="major">${showName}</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-        <a href="#" class="special">Learn more</a>
+        <p>${showDesc}</p>
+        <p>${showWeekday}, ${showDate}<br>${showTime}</p>
+    </article>
+    `;
+
+    let showTemplateMusic = `
+    <article>
+        <a href="#" class="image"><img src="images/music/${showImage}" ${lazyTag} alt="${showAltText}" /></a>
+        <h3 class="major">${showName}</h3>
+        <p>${showDesc}</p>
+        <p>${showWeekday}, ${showDate}<br>${showTime}</p>
     </article>
     `;
 
@@ -41,7 +51,7 @@ function addShow(show, lazy) {
     //         </figcaption>
     //     </figure>
     // `;
-    allShows.push(showTemplate);
+    allShows.push(showTemplateMain);
 }
 
 function fetchShowSheet(url) {
