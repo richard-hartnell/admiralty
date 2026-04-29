@@ -104,25 +104,21 @@
 						$menu._hide();
 
 				})
-				.on('click', function(event) {
-					event.stopPropagation();
-				})
-				.on('click', 'a', function(event) {
-
-					var href = $(this).attr('href');
-
-					event.preventDefault();
-					event.stopPropagation();
-
-					// Hide.
-						$menu._hide();
-
-					// Redirect.
-						window.setTimeout(function() {
-							window.location.href = href;
-						}, 350);
-
-				});
+.on('click', 'a', function(event) {
+    var href = $(this).attr('href');
+    var target = $(this).attr('target');
+    event.preventDefault();
+    event.stopPropagation();
+    // Hide.
+        $menu._hide();
+    // Redirect.
+        window.setTimeout(function() {
+            if (target === '_blank')
+                window.open(href);
+            else
+                window.location.href = href;
+        }, 350);
+});
 
 		$body
 			.on('click', 'a[href="#menu"]', function(event) {

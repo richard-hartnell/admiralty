@@ -21,7 +21,7 @@ function addShow(show, lazy) {
 
     let showTemplateMain = `
     <article>
-        <a href="#" class="image"><img src="images/music/${showImage}" ${lazyTag} alt="${showAltText}" /></a>
+        <a href="#" class="image" onclick="return false;"><img src="../../images/music/${showImage}" ${lazyTag} alt="${showAltText}" /></a>
         <h3 class="major">${showName}</h3>
         <p>${showDesc}</p>
         <p>${showWeekday}, ${showDate}<br>${showTime}</p>
@@ -30,7 +30,7 @@ function addShow(show, lazy) {
 
     let showTemplateMusic = `
     <article>
-        <a href="#" class="image"><img src="images/music/${showImage}" ${lazyTag} alt="${showAltText}" /></a>
+        <a href="#" class="image" onclick="return false;"><img src="../images/music/${showImage}" ${lazyTag} alt="${showAltText}" /></a>
         <h3 class="major">${showName}</h3>
         <p>${showDesc}</p>
         <p>${showWeekday}, ${showDate}<br>${showTime}</p>
@@ -70,11 +70,17 @@ function fetchShowSheet(url) {
                     }
                     counter++;
                 }
+                if (isIndexPage) {
+                    showSection = `
+                    ${allShows.slice(0, 4).join('\n')}
+                    `;
 
-                showSection = `
-                <h1>MUSIC</h1>
+                } else {
+                    showSection = `
+
                 ${allShows.join('\n')}
                 `;
+            }
 
                 document.getElementById('music-wrapper').innerHTML = showSection;
             }
