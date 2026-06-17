@@ -42,8 +42,8 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html"><img src="../logo-nav.webp" style="max-height: 3.6em; padding-top: 0.4em; padding-bottom: 0.4em" alt="The Admiralty Lounge Logo" /></a></h1>
+					<header id="header">
+						<h1><a href="index.html">The Admiralty Lounge</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -55,9 +55,9 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="admiralty_food.pdf?v=20260425" target="_blank">Food</a></li>
-								<li><a href="admiralty_drinks.pdf?v=20260425" target="_blank">Drinks</a></li>
-								<li><a href="admiralty_happy_hour.pdf" target="_blank">Happy Hour</a></li>
+								<li><a href="admiralty_food.pdf" target="_blank">Food</a></li>
+								<li><a href="admiralty_drinks.pdf" target="_blank">Drinks</a></li>
+								<li><a href="admiralty_happyhour.pdf" target="_blank">Happy Hour</a></li>
 								<!-- <li><a href="admiralty-mon-late.pdf">Monday & Late</a></li> -->
 								<!-- <li><a href="crew.html">Crew</a></li> -->
 								<li><a href="music.html">Music</a></li>
@@ -65,73 +65,29 @@
 							<a href="#" class="close">Close</a>
 						</div>
 					</nav>
-
-					<section id="banner">
-						<div class="inner">
-							<img src="../logo-nav.webp" style="max-width: 90%" alt="The Admiralty Lounge Logo" />
-							<!-- <h2>The Admiralty Lounge</h2> --><br><br>
-							<p>"Rouse it up, Killick: Let us live whilst we are alive." -Capt. Jack Aubrey</p>
-							          <!-- <a href="https://www.toasttab.com/admiralty-lounge-100-n-commercial-st/v3" id="toasttab-button" data-initialized="true" class="frontpage-button">
-            To-Go & Delivery
-          </a>
-          <a href="https://www.opentable.com/r/the-admiralty-lounge-reservations-bellingham?restref=1282618&lang=en-US&ot_source=Restaurant%20website" id="reservation-button" target="_blank" class="frontpage-button">
-            Reservations
-          </a> -->
-		
-						</div>
-					</section>
-
+					
+				<!-- Wrapper -->
 					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Shows</h2>
+								<p>Siren songs to accompany culinary journeys</p>
+							</div>
+						</header>
 
-							<section id="one" class="wrapper spotlight style1" style="background-image: url('../images/ambiance-interior/compass.webp'); background-size: cover; background-position: center;">
+						<!-- Content -->
+							<div class="wrapper">
 								<div class="inner">
-									<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
-									<div class="content">
-										<!-- <h2 class="major">Local roots, global flavors</h2> -->
-										<p>"...plush seating, moody lighting,<br> and well-crafted cocktails"<br>-Hey Bellingham</p>
-										<script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=1282618&type=button&theme=standard&color=3&dark=true&iframe=true&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website&cfe=true'></script>
-									</div>
-								</div>
-							</section>
 
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="#" class="image" onclick="return false;"><img src="images/small-plates/fare.webp" alt="" /></a>
-									<div class="content">
-										<h2 class="major">FARE</h2>
-										<p>"...just go in with forks flashing"<br>-<a href="https://www.cascadiadaily.com/2025/dec/09/review-the-admiralty-lounge-2/" target="_blank">Cascadia Weekly</a></p>
-										<a href="./admiralty_food.pdf" class="special" target="_blank">Dinner</a>
-										<a href="./admiralty_drinks.pdf" class="special" target="_blank">Drinks</a>
-										<a href="./admiralty_happy_hour.pdf" class="special" target="_blank">Happy Hour</a>
-										<!-- <a href="./admiralty_mon_late.pdf" class="special" target="_blank">Mondays & Late</a> -->
-									</div>
-								</div>
-							</section>
+									<h3 class="major">Our show schedule</h3>
+									<p>Carefully curated by our team of music enthusiasts. Live music every Tuesday (and some other days too).</p>
 
-							<!-- <section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">CREW</h2>
-										<p>"One of my favorite bar kitchens in Bellingham ever."<br>
-											-some townie with palate training</p>
-										<a href="#" class="special">COMING SOON</a>
-									</div>
-								</div>
-							</section> -->
-
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Music</h2>
-									<p>Sublime shows for bespoke folk.</p>
 									<section id="music-wrapper" class="features">
 										Sorry, our show calendar failed to load for some reason. Please try again, and if it doesn't work then use a different JavaScript-enabled device.
 									</section>
-									<ul class="actions">
-										<li><a href="music.html" class="button">Full schedule</a></li>
-									</ul>
+
 								</div>
-							</section>
+							</div>
 
 					</section>
 
@@ -171,16 +127,16 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/showfetcher-new.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				const isIndexPage = true;
+				const isIndexPage = false;
+				// const isMusicPage = true;
 			</script>
 
 	</body>
-	
-<script src="./assets/js/showfetcher-new.js"></script>
 </html>
